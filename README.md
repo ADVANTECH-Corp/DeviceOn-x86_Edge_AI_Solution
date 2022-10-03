@@ -7,5 +7,4 @@
 ## OPS | Deploy AI to any edge
 ## OPS | Collect training, inference, and performance data
 ## OPS | Monitor and manage large-scale devices
-## DEV | Dig out more insights from inference results
 ## Resources and reference
