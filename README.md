@@ -1,0 +1,1 @@
+# DeviceOn-x86_Edge_AI_Solution
