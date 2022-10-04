@@ -1,7 +1,7 @@
 # DeviceOn-x86_Edge_AI_Solution
 ## Overview
 xxxxxxxxxxxx
-
+![image](image/project architecture.png)
 ## ML | Label training data
 ## ML | Train an accurate enough AI model
 ## DEV | Encapsulate a portable AI application
