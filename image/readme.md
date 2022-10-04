@@ -1,1 +1,1 @@
-Here are image files used in this repo.
+Here are image files used in this article.
