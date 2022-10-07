@@ -1,9 +1,10 @@
 # DeviceOn-x86_Edge_AI_Solution
 ## Overview
 
-What is an overall Edge AI solution when migrating from POC to production?
-(說明Cloud training to Edge inference的流程)
-當我們談到一個完整的Edge AI Solution，主要涵蓋有資料蒐集、資料前處理、資料標註、AI模型training與validation、AI模型優化的轉換、AI application的開發、 AI application的邊緣佈署、AI application的邊緣運算。而這些步驟與過程，在POC階段時，通常不會也不需要考慮到整體整合上的效率問題。當Edge AI Solution由POC階段要擴展到實際量產階段，Cloud training到Edge Inference的流程串接、AI application的持續更新部署、大規模Edge AI運行的遠程監控與管理等問題，甚至還有AI推論結果的統整分析，都是需要被進一步一起考量的。
+When we talk about an overall process of Edge AI Solution, it will inclucde data ingestion, data preprocessing, data labeling, model training and validation、model optimization, application development, applicatoin deployment and edge inference. And it's obvious that we always didn't care the time spent for the flow or pipeline integration when we carried out a POC. However ...  
+當我們談到一個完整的Edge AI Solution，主要涵蓋有資料蒐集、資料前處理、資料標註、AI模型training與validation、AI模型優化的轉換、AI application的開發、 AI application的邊緣佈署、AI application的邊緣運算。而這些步驟與過程，在POC階段時，通常不會也不需要考慮到整體整合上的效率問題。
+
+...當Edge AI Solution由POC階段要擴展到實際量產階段，Cloud training到Edge Inference的流程串接、AI application的持續更新部署、大規模Edge AI運行的遠程監控與管理等問題，甚至還有AI推論結果的統整分析，都是需要被進一步一起考量的。
 
 
 >Architecture
