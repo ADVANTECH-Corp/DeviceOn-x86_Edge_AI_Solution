@@ -137,7 +137,7 @@ Step 3: Deploy a Container to Edge Device through DeviceOn
 ![](https://i.imgur.com/NOLzt20.png)
 
 
-### 3. Running Container
+### 3. Run Container
 
 > If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
 
