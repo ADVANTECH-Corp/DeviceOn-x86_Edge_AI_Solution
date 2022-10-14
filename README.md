@@ -7,9 +7,13 @@ When we talk about an overall process of Edge AI Solution, it will include data 
 
 ![image](image/project%20architecture.png)
 
+When it comes to a production stage for edge AI solutions, the topic of continuous maintenance includes lots of extra tasks to be considered and dealt with. For example, it’s necessary to re-train an AI model owing to precision bias or target objects changed. The frequency of AI application installation and update increases to a great degree. The remote capability to manage massive and unattended edge AI devices is required. Edge AI devices are rugged enough to operate normally and continuously in terrible environments, and so on.
+...
+
 How does Advantech act a booster of Edge AI solution?
 (陳述應用痛點，並與四大產品ML service、Azure Services、DeviceOn和AI device (AIMB-288E w/ Nvidia Quadro)的特點做呼應，突顯相關產品能為客戶帶來的好處、價值)
-當AI方案要從POC轉換為實際案場上可以持續運行的方案時，會有許多的因素需要被考量，甚至是許多的任務需要被處理。比方說，因為準確性調校或辨識目標變更需要經常重新訓練AI模型、安裝與更新AI應用程式的頻率次數大幅增加、遠程監管大量邊緣AI運算裝置、能夠適應惡劣環境穩定運行的邊緣AI運算裝置等等因素。為此，研華為客戶提供有Azure Custom Vision (/Edge Impulse)、Azure DevOps、Advantech DeviceOn和 Advantech AIMB-288E with NVIDIA Quadro GPU，藉由這些產品，可整合出完整的Edge AI解決方案，加速客戶的Edge AI應用導入量產與落地。
+當AI方案要從POC轉換為實際案場上可以持續運行的方案時，會有許多的因素需要被考量，甚至是許多的任務需要被處理。比方說，因為準確性調校或辨識目標變更需要經常重新訓練AI模型、安裝與更新AI應用程式的頻率次數大幅增加、遠程監管大量邊緣AI運算裝置、能夠適應惡劣環境穩定運行的邊緣AI運算裝置等等因素。
+...為此，研華為客戶提供有Azure Custom Vision (/Edge Impulse)、Azure DevOps、Advantech DeviceOn和 Advantech AIMB-288E with NVIDIA Quadro GPU，藉由這些產品，可整合出完整的Edge AI解決方案，加速客戶的Edge AI應用導入量產與落地。
 
 (Table)
 
