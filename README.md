@@ -20,10 +20,8 @@ When it comes to a production stage for edge AI solutions, the topic of continuo
 
 ![image](image/scenario.png)
 
-Start journey with a use case of productivity monitoring for smart factory
-(Background of productivity monitoring for smart factory)
-接下來將透過一個客戶的實際案例，說明如何運用研華在Edge AI的相關產品，協助客戶建構一個完整的Edge AI解決方案，不僅止於POC，並且是可以持續運營的Edge AI落地應用。
-客戶為了PCB產線的產能管理，希望能更即時、準確的了解發生的特定生產問題。為此，客戶希望導入視覺AI方案，提升管理效率，減少產能損失。首先，客戶歸納了產能監控的要點，一為輸送帶上是否不斷有待加工的PCB，二為工作站上的操作人員是否有正常的操作與產出。其中，關於工作站上的操作人員，由於產線畫面的視角和人員站位都有影響，為了提升視覺AI判讀人員是否在工作崗位上的準確性、可靠度，除了辨識畫面中的人形外，針對這個案例，實務上額外需要判讀人員配戴的帽子、手部、工具等。這樣的複雜辨識問題，需要相應能夠處理的AI model/AI algorithm，以及足夠算力的Edge AI device，後續我們將分享給大家，研華如何運用前面提到的幾個關鍵Edge AI產品，協助客戶一同建構出可長期運維的Edge AI應用。
+In the following, a use case for production line management will be introduced. It will demonstrate how Advantech supports customers to construct a production-stage edge AI solution with edge AI related products by Advantech. It didn’t end in POC and moreover aimed to create a continuously operational edge AI application.
+In this use case of PCB production management, customers tried to find a way to get notifications immediately for specific production issues. Therefore they would like to adopt a vision AI solution to improve management efficiency and reduce production loss. In the beginning, customers analyzed key factors of production capability monitoring. One is to make sure there is always a WIP of PCB in a production line to be manufactured. The other one is to know if an operator in the target workstation can operate correctly and produce normally. For operator recognition by a vision AI method in this scene, it’s easily be affected by different camera capture angles and different operator positions. To enhance recognition precision and reliability of operator existence in this practice, except for general person detection, it’s also necessary to detect a cap, gloves and tools worn or operated by an operator in each capture. To deal with such a complicated recognition problem, it always needs a compatible AI algorithm/model and powerful edge AI computing device. In the following sections, let’s find out how the above-mentioned Advantech edge AI products can be adopted to help construct an edge AI application into a production phase in which continuous maintenance is also considered.
 
 ## ML | Label training data
 ## ML | Train an accurate enough AI model
