@@ -9,7 +9,12 @@ When we talk about an overall process of Edge AI Solution, it will include data 
 
 When it comes to a production stage for edge AI solutions, the topic of continuous maintenance includes lots of extra tasks to be considered and dealt with. For example, it’s necessary to re-train an AI model owing to precision bias or target objects changed. The frequency of AI application installation and update increases to a great degree. The remote capability to manage massive and unattended edge AI devices is required. Edge AI devices are rugged enough to operate normally and continuously in terrible environments, and so on. To help deal with such problems, Advantech provides customers with Azure Custom Vision, Azure DevOps, DeviceOn and AIMB-288E with NVIDIA Quadro GPU. With the aids of these products and services, it can help construct a complete Edge AI solution and accelerate realization of solution landing or production stage migration.
 
-(Table)
+| Category  | Product | Key Benefits & Features |
+| ------------- | ------------- | ------------- |
+| ML SaaS | Azure Custom Vision | Easily customize your own state-of-the-art computer vision models for your unique use case that no ML expertise is required |
+| Dev. Pipeline | Azure DevOps | Complete or complementary services provision to automate development pipeline for packaging your AI application and cross-region development|
+| Deployment & Mgmt. | **DeviceOn** | Central mgmt. platform to remotely update AI applications (OTA), and monitor and control large-scale devices at ease |
+| AI Edge | (TBD)**AIMB-288E** | 12th Gen Intel® CPU integrated with NVIDIA® Quadro® GPU to fit within 1U systems while yielding 100% performance in 55 °C environments |
 
 >Use Case
 
