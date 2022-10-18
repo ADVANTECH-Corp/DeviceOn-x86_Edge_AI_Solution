@@ -1,5 +1,26 @@
 # Operation - Deploy AI to Edge Device
 
+- [Operation - Deploy AI to Edge Device](#operation---deploy-ai-to-edge-device)
+  * [Purpose](#purpose)
+  * [Prerequisites](#prerequisites)
+  * [Step 1: Onboarding Your Device to IoT Device Platform (DeviceOn)](#step-1--onboarding-your-device-to-iot-device-platform--deviceon-)
+    + [1. Log in to the DeviceOn Cloud Service with Your Account and Password](#1-log-in-to-the-deviceon-cloud-service-with-your-account-and-password)
+    + [2. Download WISE-Agent and Setup on your Device](#2-download-wise-agent-and-setup-on-your-device)
+    + [3. Open a terminal](#3-open-a-terminal)
+    + [4. Copy the installer to target host](#4-copy-the-installer-to-target-host)
+    + [5. Set the installer as executable](#5-set-the-installer-as-executable)
+    + [6. Running the installer](#6-running-the-installer)
+    + [7. Start WISE-Agent and Connect to DeviceOn](#7-start-wise-agent-and-connect-to-deviceon)
+    + [8. Start Device Management](#8-start-device-management)
+  * [Step 2: Enalbe and Configure Azure Container Registry on DeviceOn](#step-2--enalbe-and-configure-azure-container-registry-on-deviceon)
+    + [1. Configure Container Registry](#1-configure-container-registry)
+    + [2. Synchronize Registry](#2-synchronize-registry)
+  * [Step 3: Deploy a Container to Edge Device through DeviceOn](#step-3--deploy-a-container-to-edge-device-through-deviceon)
+    + [1. Docker Dashboard](#1-docker-dashboard)
+    + [2. Deploy a Container to Edge Device](#2-deploy-a-container-to-edge-device)
+    + [3. Run Container](#3-run-container)
+
+
 Purpose
 ---
 Through the IoT device platform called DeviceOn to provides containers management to help AI developer or system opterator to batch provision inference container to edge devices. DeviceOn is the best platform not only manage contaienr but application. In the section, we would like to focus on how to deploy container to edge devices.
