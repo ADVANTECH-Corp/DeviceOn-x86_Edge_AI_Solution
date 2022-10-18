@@ -1,5 +1,27 @@
 # Operation - Monitor and Manage Large-scale Devices
 
+- [Operation - Monitor and Manage Large-scale Devices](#operation---monitor-and-manage-large-scale-devices)
+  * [Prerequisites](#prerequisites)
+  * [How to Manage lots of Devices?](#how-to-manage-lots-of-devices)
+    + [Onboarding Devices](#onboarding-devices)
+      - [1. Auto Provisioning and Onboarding](#1-auto-provisioning-and-onboarding)
+      - [2. One-by-One or Local Provisioning](#2-one-by-one-or-local-provisioning)
+    + [On-premise and Cloud Deployment](#on-premise-and-cloud-deployment)
+      - [1. On-premise (Standaone Version, 1k Devices)](#1-on-premise-standaone-version-1k-devices)
+      - [2. Enterprise (10k+ Devices)](#2-enterprise-10k-devices)
+  * [What's the Major Features and How to Do the Remote Control?](#whats-the-major-features-and-how-to-do-the-remote-control)
+      - [1. Application Management](#1-application-management)
+      - [2. Container Management](#2-container-management)
+      - [3. Remote Diagnostic (RDP, Terminal, Screenshot)](#3-remote-diagnostic-rdp-terminal-screenshot)
+      - [4. Secure Lockdown Control](#4-secure-lockdown-control)
+      - [5. Hardware Management (SUSI)](#5-hardware-management-susi)
+      - [6. OOB (Out-of-Band) Managment](#6-oob-out-of-band-managment)
+      - [7. Monitoring](#7-monitoring)
+  * [What the benefit of using the DeviceOn?](#what-the-benefit-of-using-the-deviceon)
+    + [Batch Deployment (App and Container) and Operation](#batch-deployment-app-and-container-and-operation)
+    + [Remote Troubleshooting - Inband and OOB](#remote-troubleshooting---inband-and-oob)
+    + [Data acquisition and Visualization](#data-acquisition-and-visualization)
+
 Prerequisites
 ---
 
