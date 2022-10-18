@@ -11,7 +11,7 @@ When it comes to a production stage for edge AI solutions, the topic of continuo
 
 | Category  | Product | Key Benefits & Features |
 | ------------- | ------------- | ------------- |
-| ML SaaS | Azure Custom Vision | Easily customize your own state-of-the-art computer vision models for your unique use case that no ML expertise is required |
+| ML SaaS | Azure Custom Vision | Easily customize your own state-of-the-art computer vision models for your **complex use case** that no ML expertise is required |
 | Dev. Pipeline | Azure DevOps | Complete or complementary services provision to automate development pipeline for packaging your AI application and cross-region development|
 | Deployment & Mgmt. | **DeviceOn** | Central mgmt. platform to remotely update AI applications (OTA), and monitor and control large-scale devices at ease |
 | AI Edge | (TBD)**AIMB-288E** | 12th Gen Intel® CPU integrated with NVIDIA® Quadro® GPU to fit within 1U systems while yielding 100% performance in 55 °C environments |
