@@ -11,10 +11,10 @@ When it comes to a production stage for edge AI solutions, the topic of continuo
 
 | Category  | Product | Key Benefits & Features |
 | ------------- | ------------- | ------------- |
-| ML SaaS | Azure Custom Vision | Easily customize your own state-of-the-art computer vision models for your **complex use case** that no ML expertise is required |
-| Dev. Pipeline | Azure DevOps | Complete or complementary services provision to automate development pipeline for packaging your AI application and cross-region development|
-| Deployment & Mgmt. | **DeviceOn** | Central mgmt. platform to remotely update AI applications (OTA), and monitor and control large-scale devices at ease |
-| AI Edge | **EPC-B5587** | A powerful computing performance to deal with intricate AI algorithm equipped with NVIDIA RTX-A6000 |
+| ML SaaS | [Azure Custom Vision](https://azure.microsoft.com/en-us/products/cognitive-services/custom-vision-service/) | Easily customize your own state-of-the-art computer vision models for your **complex use case** that no ML expertise is required |
+| Dev. Pipeline | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | Complete or complementary services provision to automate development pipeline for packaging your AI application and cross-region development|
+| Deployment & Mgmt. | **[DeviceOn](https://campaign.advantech.online/en/DeviceOn/index.html#SolutionPackages)** | Central mgmt. platform to remotely update AI applications (OTA), and monitor and control large-scale devices at ease |
+| AI Edge | **[EPC-B5587](https://www.advantech.com/en/products/f50cd471-773b-4301-95f4-5547702c0ec7/epc-b5587/mod_3cf5ef68-e055-45e1-98dd-84987ae4a331)** | A powerful computing performance to deal with intricate AI algorithm equipped with NVIDIA RTX-A6000 |
 
 >Use Case
 
@@ -37,4 +37,19 @@ In this use case of PCB production management, customers tried to find a way to 
 
 * ### [**OPS | Monitor and manage large-scale devices**](OPS%20|%20Monitor%20and%20manage%20large-scale%20devices.md)
 
-## Resources and reference
+## Reference Resources
+### App Upload and Deployment
+
+* [Wrap an App](https://youtu.be/5wRANEF-nxM?t=171)
+
+* [Select an app then deploy to devices](https://youtu.be/5wRANEF-nxM?t=15)
+
+* [Select a device then deploy an app](https://youtu.be/5wRANEF-nxM?t=36)
+
+### AI Model Deployment and Operation
+
+* [Create a container](https://youtu.be/bilP6FpyU0M?t=109)
+
+* [Container operation](https://youtu.be/bilP6FpyU0M?t=145)
+
+### [More about DeviceOn](https://campaign.advantech.online/en/DeviceOn/index.html#SolutionPackages)
