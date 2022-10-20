@@ -14,7 +14,7 @@ When it comes to a production stage for edge AI solutions, the topic of continuo
 | ML SaaS | [Azure Custom Vision](https://azure.microsoft.com/en-us/products/cognitive-services/custom-vision-service/) | Easily customize your own state-of-the-art computer vision models for your **complex use case** that no ML expertise is required |
 | Dev. Pipeline | [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) | Complete or complementary services provision to automate development pipeline for packaging your AI application and cross-region development|
 | Deployment & Mgmt. | **[DeviceOn](https://campaign.advantech.online/en/DeviceOn/index.html#SolutionPackages)** | Central mgmt. platform to remotely update AI applications (OTA), and monitor and control large-scale devices at ease |
-| AI Edge | **[EPC-B5587](https://www.advantech.com/en/products/f50cd471-773b-4301-95f4-5547702c0ec7/epc-b5587/mod_3cf5ef68-e055-45e1-98dd-84987ae4a331)** | A powerful computing performance to deal with intricate AI algorithm equipped with NVIDIA RTX-A6000 |
+| AI Edge | **[EPC-B5587](https://www.advantech.com/en/products/f50cd471-773b-4301-95f4-5547702c0ec7/epc-b5587/mod_3cf5ef68-e055-45e1-98dd-84987ae4a331)** | An AI edge of powerful computing performance equipped with a NVIDIA RTX-A6000 to deal with intricate AI algorithm |
 
 >Use Case
 
