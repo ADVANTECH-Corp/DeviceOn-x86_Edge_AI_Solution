@@ -1,4 +1,4 @@
-## 登入Azure的Custom Vision - Home
+### 登入Azure的Custom Vision - Home
 
 <p align="center">
   <img width="600" src="image\1.png">
@@ -26,6 +26,8 @@
   <img width="600" src="image\3.png">
 </p>
 
+> 未必要把所有未標記的圖片標記完後才能進行模型的訓練，但是訓練資料量不足時是無法進行訓練的
+
 ### 標記圖片
 
 * 點選`Untagged`，便可以對裡面的照片進行標記
@@ -34,8 +36,12 @@
   <img width="600" src="image\4.png">
 </p>
 
+<p align="center">
+  <img width="600" src="image\5.png">
+</p>
+
 * 標記完後，畫面左下角會顯示各標記類別的數量
 
-![螢幕擷取畫面 2022-10-20 151748](C:\Users\james.lai\Pictures\螢幕擷取畫面 2022-10-20 151748.png)
-
-
+<p align="center">
+  <img width="600" src="image\6.png">
+</p>
