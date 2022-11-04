@@ -8,7 +8,9 @@ As you decide to apply the model you have trained, click `Performance` in the to
 
 [image13]()
 
-After you push `Export`, it will show a pop-up window, you can export it and use it in many platform, such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. And then you can choose one platform that is suitable of your application. For this practice, `Dockerfile` would be selected.
+from : https://blog.alantsai.net/posts/2018/08/bot-framework-with-ai-cognitive-service-31-export-custom-vision-trained-model-and-use-dockerfile-to-run-locally#WizKMOutline_1534085309606709
+
+After you push `Export`, it will show a pop-up window, and you can see many platforms, such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose one platform that is suitable of your application. For this practice, `Dockerfile` would be selected.
 
 [image14]()
 
