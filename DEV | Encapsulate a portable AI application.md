@@ -2,27 +2,37 @@
 
 As you decide to apply the model you have trained, click `Performance` in the top of your page, and you will see `Export` under Performance tab.
 
-[image12]()
+<p align="center">
+  <img width="600" src="image\12.png">
+</p>
 
 >  _**Notice**_ : If you didn't pick `General (compact) [S1]` at the first time you created your project, `Export` will be gray and can't be used.
 
-[image13]()
+<p align="center">
+  <img width="600" src="image\13.png">
+</p>
 
 from : https://blog.alantsai.net/posts/2018/08/bot-framework-with-ai-cognitive-service-31-export-custom-vision-trained-model-and-use-dockerfile-to-run-locally#WizKMOutline_1534085309606709
 
 After you push `Export`, it will show a pop-up window, and you can see many platforms, such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose one platform that is suitable of your application. For this practice, `Dockerfile` would be selected.
 
-[image14]()
+<p align="center">
+  <img width="600" src="image\14.png">
+</p>
 
 There are three version, Linux, Windows, and ARM (Raspberry Pi 3), in Dockerfile platform.
 
 Select `Linux`, push `Download` and then click `Export`.
 
-[image15]()
+<p align="center">
+  <img width="600" src="image\15.png">
+</p>
 
 Unzip the downloaded file, and it would be like below
 
-[image16]()
+<p align="center">
+  <img width="600" src="image\16.png">
+</p>
 
 ## Use Docker file
 
