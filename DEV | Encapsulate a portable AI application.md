@@ -34,6 +34,10 @@ Unzip the downloaded file, and it would be like below
   <img width="600" src="image\16.png">
 </p>
 
+> The `Dockerfile` in the unzipped directory includes the libraries that sufficiently inference.
+
+
+
 ## Use Docker file
 
 > If you don't have docker yet, you could download it from [here](https://www.docker.com/products/docker-desktop).
@@ -51,11 +55,10 @@ Let's build up the **Docker Image** first.
   ```
   sudo docker build -t <your image name> .
   ```
-  
+
 <p align="center">
   <img width="600" src="image\17.png">
 </p>
-
 
 * After it finishes, Enter the following instruction, and you can see the image you just have built.
 
