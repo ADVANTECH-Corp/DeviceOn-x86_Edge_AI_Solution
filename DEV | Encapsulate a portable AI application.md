@@ -46,13 +46,16 @@ Let's build up the **Docker Image** first.
 
 * Open a terminal and move to the directory of the docker file.
 
-  [image17]()
-
 * Enter the instruction:
 
   ```
   sudo docker build -t <your image name> .
   ```
+  
+<p align="center">
+  <img width="600" src="image\17.png">
+</p>
+
 
 * After it finishes, Enter the following instruction, and you can see the image you just have built.
 
@@ -60,7 +63,9 @@ Let's build up the **Docker Image** first.
   sudo docker image ls
   ```
 
-  [image18]()
+<p align="center">
+  <img width="600" src="image\18.png">
+</p>
 
 ##### Run test
 
@@ -72,8 +77,6 @@ Let's build up the **Docker Image** first.
 
 * Go to explorer, and enter `localhost`. You will see `CustomVision.ai model host harness`.
 
-  [image19]()
-
 * You also can use the images in your computer to do this test by enter the following instruction.
 
   ```
@@ -82,7 +85,9 @@ Let's build up the **Docker Image** first.
 
 * The result will be like
 
-  [image20]() 
+<p align="center">
+  <img width="600" src="image\19.png">
+</p>
 
 
 
