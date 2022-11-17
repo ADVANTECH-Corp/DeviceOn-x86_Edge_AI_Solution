@@ -29,7 +29,7 @@ Sign in to start your project
 
 * After finishing uploading, there will be a red dot showing on the `Untagged` button on left side to be a notificaiton.
 
-* It isn't necessary to tag all untagged images to proceed the next step for model training, but a training process can't be started without enough training data.
+* It is not necessary to tag all untagged images to proceed the next step for model training, but a training process can't be started without enough training data.
 
 <p align="center">
   <img width="600" src="image\3.png">
