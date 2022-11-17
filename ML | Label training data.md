@@ -22,7 +22,7 @@ Sign in to start your project
 </p>
 
 ### Upload training data
-> There are two categories of data able to be imported to custom vision. 1)untagged images; 2)tagged images. 
+> There are two categories of data able to be imported to Azure Custom Vision. 1)untagged images; 2)tagged images. 
 
 ##### Untagged images
 * Click `Add images` and then select untagged images for uploading.
@@ -36,13 +36,13 @@ Sign in to start your project
 </p>
 
 ##### Tagged images
-* The portal doesn’t allow directly uploading your own tagged images, and you have to use [APIs/SDKs](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python) that they support.  
+* Azure Custom Visoin studio doesn’t support to upload your own tagged images directly, but provides us with [APIs/SDKs](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python) to fulfill this end.
 
-* You can upload up to 64 images in a single batch.
+* You can upload up to 64 images in a single batch in an app developed with the above-mentioned APIs/SDKs.
 
 ### Label images
 
-* Click `Untagged`, then you can label images.(點選`Untagged`，便可以對裡面的照片進行標記)
+* Click `Untagged` and then you can start to label images through its friendly UI/UX design. ( Moreover you still can enjoy auto-labeling, if you already have a trained model in the project.)
 
 <p align="center">
   <img width="600" src="image\4.png">
@@ -52,7 +52,7 @@ Sign in to start your project
   <img width="600" src="image\5.png">
 </p>
 
-* After finishing labeling images, the total amount of each tags will show in down left corner.(標記完後，畫面左下角會顯示各標記類別的數量)
+* After finishing labeling images, the amount of each tag will show in down left corner.
 
 <p align="center">
   <img width="600" src="image\6.png">
