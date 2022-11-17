@@ -1,15 +1,15 @@
-## Training model
+## Train your AI model
 
-* Click `Train` button on upper right to start training stage.(當訓練圖片標記完成後，就可以進行訓練。點擊右上角`Train`按鈕)
+* Click `Train` button at upper right to start training wizard after finishing data labeling.
 
 <p align="center">
   <img width="600" src="image\7.png">
 </p>
 
-There are two ways to train your model, 1)`Quick Training`; 2)`Advanced Training`. It is a little bit difference from what we know about setting parameters for training. It uses _training time_ to train model instead of epochs.(根據需求選擇訓練時長，`Quick Training`大約25分鐘就訓練完成)
+There are two ways to train your model, 1)`Quick Training`; 2)`Advanced Training`. They proide difference parameters to you for setting a training procedure. Basically both of them use _training time_ to control model training instead of epochs.
 
 ##### Quick Training
-* It just costs about 25 minutes no matter how many your images are. The most important thing is it is free.
+* It just takes about 25 minutes no matter how many your images are adopted. The other attractive point here should be that it's free of charge so far. Therefore you can use this to do a POC for your innovatie AI applications.
 
 <p align="center">
   <img width="600" src="image\8.png">
