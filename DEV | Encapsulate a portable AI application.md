@@ -86,7 +86,7 @@ Let's build up the **Docker Image** first.
   curl -X POST http://127.0.0.1/image -F imageData=@<your_image_name.jpg, ex:/home/advantech/test_image.jpg>
   ```
 
-* The result will be like
+* The result will be presented as characters
 
 <p align="center">
   <img width="600" src="image\19.png">
