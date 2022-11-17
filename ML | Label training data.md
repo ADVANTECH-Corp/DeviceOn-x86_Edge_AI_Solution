@@ -15,7 +15,7 @@ Sign in to start your project
 
 * Select a suitable domain according to your application. You can get further information about all domains from this [website](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/select-domain). PLEASE NOTE if you want to export your model to execute inference at edge (/as an off-line mode), here it's necessary to select `General (compact) [S1]` in `Domains`.
 
-* Then export your model to customize your own application and further realize offline inference at edge.
+* Then it will be able to export your model to customize your own application and further realize offline inference at edge.
 
 <p align="center">
   <img width="600" src="image\2.png">
