@@ -1,5 +1,4 @@
-### [Azure Custom Vision - Home](https://www.customvision.ai/)
-Sign in to start your project
+ ### Sign in [Azure Custom Vision - Home](https://www.customvision.ai/) to start your vision AI project
 
 <p align="center">
   <img width="600" src="image\1.png">
