@@ -7,28 +7,29 @@ Sign in to start your project
 
 ### Create a new project
 
-* Fill out the necessary blanks.(填寫必填欄位內容)
+* Fill out necessary information to proceed the next step.
 
-* Use the resource you have created or click `create new` to make a new one.(若沒有`Resource`可以直接點選`create new`新增，若已建立好，則可以選擇既有的)
+* Use a project you have created or click `create new` to make a new one.
 
-* In this case, we use object detection to detect items on workstation. Therefore, it should select `Object Detection` on `Project Types`.(本例以物件偵測為主，所以在`Project Types`上選擇`Object Detection`)
+* In this use case, object detection is used to realize monitoring in a production line. Therefore, it's necessary to select `Object Detection` in `Project Types`.
 
-* Select the domain that is closest to your application. You can get the information about all the domains from this [website](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/select-domain). If you want to export your model, you shall select `General (compact) [S1]` on `Domains`.(若有離線推論的需求，需在`Domains`上選擇`General (compact) [S1]`)
-* Export the model, then you can use it to infer offline, and customize your own application.
+* Select a suitable domain according to your application. You can get further information about all domains from this [website](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/select-domain). PLEASE NOTE if you want to export your model to execute inference at edge (/as an off-line mode), here it's necessary to select `General (compact) [S1]` in `Domains`.
+
+* Then export your model to customize your own application and further realize offline inference at edge.
 
 <p align="center">
   <img width="600" src="image\2.png">
 </p>
 
 ### Upload training data
-> There are two kinds of data to import to custom vision. 1)untagged images; 2)tagged images. 
+> There are two categories of data able to be imported to custom vision. 1)untagged images; 2)tagged images. 
 
 ##### Untagged images
-* Click `Add images`, then select the untagged images.(按下`Add images`後，選取欲訓練且未標記的資料)
+* Click `Add images` and then select untagged images for uploading.
 
-* After finishing uploading, there will be a red dot sign on `Untagged` button on left side for reminding you.(上傳完成後，左側的`Untagged`會提醒有未標記的圖片)
+* After finishing uploading, there will be a red dot showing on the `Untagged` button on left side to be a notificaiton.
 
-* It is not necessary to tag all the untagged images to enter training step, but training process can't start without enough training images.(未必要把所有未標記的圖片標記完後才能進行模型的訓練，但是訓練資料量不足時是無法進行訓練的)
+* It isn't necessary to tag all untagged images to proceed the next step for model training, but a training process can't be started without enough training data.
 
 <p align="center">
   <img width="600" src="image\3.png">
