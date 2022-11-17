@@ -42,7 +42,7 @@ Sign in to start your project
 
 ### Label images
 
-* Click `Untagged` and then you can start to label images through its friendly UI/UX design. ( Moreover you still can enjoy auto-labeling, if you already have a trained model in the project.)
+* Click `Untagged` and then you can start to label images through its friendly UI/UX design. ( Moreover you also can enjoy auto-labeling if you already have at least one trained model in the project.)
 
 <p align="center">
   <img width="600" src="image\4.png">
