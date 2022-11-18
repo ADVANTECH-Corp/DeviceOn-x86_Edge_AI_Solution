@@ -81,7 +81,7 @@ Now let's start to build up a **Docker Image** firstly.
 3. You also can use a image file in your device to do a simple test with the following instruction.
 
   ```
-  curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
+    curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
   ```
 
 4. Finally you can see a inference result printed in characters.
