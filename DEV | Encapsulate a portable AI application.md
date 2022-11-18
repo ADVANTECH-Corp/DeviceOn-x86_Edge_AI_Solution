@@ -76,7 +76,7 @@ Now let's start to build up a **Docker Image** firstly.
     sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
-2. To check if the docker container is running successfully, go to explorer and enter `localhost`, `127.0.0.1:80` or your virtual manchine's ip.Then, you will see `CustomVision.ai model host harness`.
+2. To check if the docker container is running successfully, launch a web browser and then enter `localhost`, `127.0.0.1:80` or your virtual manchine ip. Finally, we would say it works normally for now if you can see a `CustomVision.ai model host harness` is there.
 
 <p align="center">
   <img width="600" src="image\20.png">
