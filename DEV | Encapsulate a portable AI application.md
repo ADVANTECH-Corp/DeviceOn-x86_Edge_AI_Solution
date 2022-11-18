@@ -73,7 +73,7 @@ Now let's start to build up a **Docker Image** firstly.
 1. Enter the instruction:
 
   ```
-  sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
+    sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
 2. To check if the docker container is running successfully, go to explorer and enter `localhost`. You will see `CustomVision.ai model host harness`.
