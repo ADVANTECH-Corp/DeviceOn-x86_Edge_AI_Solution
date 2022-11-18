@@ -76,7 +76,11 @@ Now let's start to build up a **Docker Image** firstly.
     sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
-2. To check if the docker container is running successfully, go to explorer and enter `localhost`. You will see `CustomVision.ai model host harness`.
+2. To check if the docker container is running successfully, go to explorer and enter `localhost`, `127.0.0.1:80` or your virtual manchine's ip.Then, you will see `CustomVision.ai model host harness`.
+
+<p align="center">
+  <img width="600" src="image\20.png">
+</p>
 
 3. You also can use a image file in your device to do a simple test with the following instruction.
 
