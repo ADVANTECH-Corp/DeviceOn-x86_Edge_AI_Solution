@@ -84,7 +84,7 @@ Now let's start to build up a **Docker Image** firstly.
     curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
   ```
 
-4. Finally you can see a inference result printed in characters.
+4. Finally you can see inference result printed in the terminal window.
 
 <p align="center">
   <img width="600" src="image\19.png">
