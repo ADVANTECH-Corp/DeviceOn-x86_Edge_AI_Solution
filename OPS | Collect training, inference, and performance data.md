@@ -12,7 +12,7 @@ Prerequisites
 - A workable DeviceOn server must be installed and running without problems. You could refer to the [documentation](https://docs.wise-paas.advantech.com/en/Guides_and_API_References/ApplicationServices/1564727799415968385/1589506780729736622/v1.0.0) of DeviceOn to set up your own server.
 - An edge device must be installed WISE-Agnet and onboarding to DeviceOn server. You may refere to [Operation - Deploy AI to Edge Device](/OPS%20%7C%20Deploy%20AI%20to%20any%20edge.md) for details.
 
-Step 1: How to Upload Your Training Data and Automatically
+Step 1: How to Upload Your Training Data Automatically
 ---
  
  ### <font color=darkgrey> Upload to Azure Custom Vision (T.B.C)</font>
