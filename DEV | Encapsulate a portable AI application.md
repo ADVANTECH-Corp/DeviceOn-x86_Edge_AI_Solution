@@ -1,96 +1,93 @@
 ## Export your model
 
-As you decide to apply the model you have trained, click `Performance` in the top of your page, and you will see `Export` under Performance tab.
+After a training process is done, click `Performance` tab at the top of current page and you will see `Export` item in this Performance sheet.
 
 <p align="center">
   <img width="600" src="image\12.png">
 </p>
 
->  _**Notice**_ : If you didn't pick `General (compact) [S1]` at the first time you created your project, `Export` will be gray and can't be used.
+>  _**Notice**_ : If you doesn't select `General (compact) [S1]` in the beginning of your project, here `Export` will be gray and unavailable.
 
 <p align="center">
   <img width="600" src="image\13.png">
 </p>
 
-from : https://blog.alantsai.net/posts/2018/08/bot-framework-with-ai-cognitive-service-31-export-custom-vision-trained-model-and-use-dockerfile-to-run-locally#WizKMOutline_1534085309606709
+>  Image source : https://blog.alantsai.net/posts/2018/08/bot-framework-with-ai-cognitive-service-31-export-custom-vision-trained-model-and-use-dockerfile-to-run-locally#WizKMOutline_1534085309606709
 
-After you push `Export`, it will show a pop-up window, and you can see many platforms, such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose one platform that is suitable of your application. For this practice, `Dockerfile` would be selected.
+After you click `Export`, a pop-up window shows up. Therein you can see many export types(/frameworks), such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose a target suitable for your application to be exported. In this repo, `Dockerfile` is selected as demonstration.
 
 <p align="center">
   <img width="600" src="image\14.png">
 </p>
 
-There are three version, Linux, Windows, and ARM (Raspberry Pi 3), in Dockerfile platform.
+There are three versions in Dockerfile export: Linux, Windows and ARM (Raspberry Pi 3).
 
-Select `Linux`, push `Download` and then click `Export`.
+To get a required docker file, select `Linux`, then click `Download` and finally click `Export`.
 
 <p align="center">
   <img width="600" src="image\15.png">
 </p>
 
-Unzip the downloaded file, and it would be like below
+Afterwards unzip the downloaded file, and it would be like as below.
 
 <p align="center">
   <img width="600" src="image\16.png">
 </p>
 
-> The `Dockerfile` in the unzipped directory includes the libraries that sufficiently inference.
-
-
+Therein the `Dockerfile` in the unzipped directory includes required actions to pull/download the libraries for AI inference computing.
 
 ## Use Docker file
 
-> If you don't have docker yet, you could download it from [here](https://www.docker.com/products/docker-desktop).
+> To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
-In this **Docker file**, it actually runs **TensorFlow's model**. The crucial reason to use this platform is that it's very convenient and easy to integrate with **Azure IoT Edge** and **Azure ML**.
+With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
 
-Let's build up the **Docker Image** first.
+Now let's start to build up a **Docker Image** firstly.
 
-##### Build up the Docker Image
+#### Build up a Docker image
 
-* Open a terminal and move to the directory of the docker file.
+  1. Open a terminal and move to the directory of the docker file.
 
-* Enter the instruction:
-
+  2. Enter the instruction:
+  
   ```
-  sudo docker build -t <your image name> .
+    sudo docker build -t <your image name> .
   ```
 
 <p align="center">
   <img width="600" src="image\17.png">
 </p>
 
-* After it finishes, Enter the following instruction, and you can see the image you just have built.
+  3. After it finishes, enter the following instruction, and you can see the image you just have built.
 
   ```
-  sudo docker image ls
+    sudo docker image ls
   ```
 
 <p align="center">
   <img width="600" src="image\18.png">
 </p>
 
-##### Run test
+#### Create and run a Docker container
 
-* Enter the instruction:
+1. Enter the instruction:
 
   ```
   sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
-* Go to explorer, and enter `localhost`. You will see `CustomVision.ai model host harness`.
+2. To check if the docker container is running successfully, go to explorer and enter `localhost`. You will see `CustomVision.ai model host harness`.
 
-* You also can use the images in your computer to do this test by enter the following instruction.
+3. You also can use a image file in your device to do a simple test with the following instruction.
 
   ```
-  curl -X POST http://127.0.0.1/image -F imageData=@<your_image_name.jpg, ex:/home/advantech/test_image.jpg>
+  curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
   ```
 
-* The result will be presented as characters
+4. Finally you can see a inference result printed in characters.
 
 <p align="center">
   <img width="600" src="image\19.png">
 </p>
-
 
 
