@@ -14,15 +14,14 @@ Prerequisites
 
 Step 1: How to Upload Your Training Data and Automatically
 ---
-
- ### <font color=darkgrey>1. Upload to Third-Party Storage (T.B.C)</font>
  
- ### <font color=darkgrey>2. Upload to Azure Custom Vision (T.B.C)</font>
+ ### <font color=darkgrey> Upload to Azure Custom Vision (T.B.C)</font>
 
+   ## !!!Need to Discuss with MW!!!
 
 Step 2: How to Upload Your Inference Data
 ---
-### 1. Through Key-Value Plugin of WISE-Agent
+### Through Key-Value Plugin of WISE-Agent
 Assuming your inference result is numeric, boolean, for example model's accuracy (%), the age of the person or gender. Those types could adopt the Key-Value mechanism to upload to the DeviceOn server. 
 
  #### <font color=darkred>***Key-Value Characteristics:***</font>
@@ -180,9 +179,3 @@ You can unmark parameter by remove "**#**" symbol in INI file.
 #port=3799
 #cache=0
 ``` 
- 
-### <font color=darkgrey>2. Through DeviceOn Data Synchronize (T.B.C)</font>
- 
-
-What the benefit of using the Plugin of WISE-Agent?
----
