@@ -4,6 +4,8 @@
   <img width="600" src="image\1.png">
 </p>
 
+# !!! [待補] (描述如何註冊Azure account 和 如何開啟Azure Custom Vision功能)
+
 ### Create a new project
 
 * Fill out necessary information to proceed the next step.
@@ -38,6 +40,8 @@
 * Azure Custom Visoin studio doesn’t support to upload your own tagged images directly, but provides us with [APIs/SDKs](https://learn.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python) to fulfill this end.
 
 * You can upload up to 64 images in a single batch in an app developed with the above-mentioned APIs/SDKs.
+
+# !!! [待補] 能否提供labeled data的轉換範例程式碼
 
 ### Label images
 
