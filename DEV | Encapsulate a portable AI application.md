@@ -94,4 +94,7 @@ Now let's start to build up a **Docker Image** firstly.
   <img width="600" src="image\19.png">
 </p>
 
+# 11/21 Memo with MW
 
+理想又合理的作法：2包container images，1包主要是AI app + inference data；另1包主要是inference server + AI model。
+方便demo說明的作法：1包cotainer image，包括AI app, inference data, inference server, AI model, ...
