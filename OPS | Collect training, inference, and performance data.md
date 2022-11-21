@@ -18,6 +18,11 @@ Step 1: How to Upload Your Training Data Automatically
  ### <font color=darkgrey> Upload to Azure Custom Vision (T.B.C)</font>
 
    ## !!!Need to Discuss with MW!!!
+   
+   1. 說明inference app會把inference的image存在某個local folder
+   2. 提供一script範例，說明該script如何將某folder裡的image data上傳至特定的Azure Custom Vision project 
+   
+   (提一下，實務上通常做完第1步後，會需要有個image review的動作，來篩選需要的image for training，省時也省費用，才會做第2步，上傳training data)
 
 Step 2: How to Upload Your Inference Data
 ---
