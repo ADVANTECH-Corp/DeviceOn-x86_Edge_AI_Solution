@@ -127,9 +127,10 @@ $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:
 * Make sure you have updated the contents of the running container and just enter the following command.
 
 ```
-$ sudo docker commit <your image name>:<your tag name>
+$ sudo docker commit advantech_edge_ai:v1
 ```
-
+* After committing your container, type `$ sudo docker image ls` to check if it is successful.
+* 
 <p align="center">
   <img width="600" src="image\23.png">
 </p>
