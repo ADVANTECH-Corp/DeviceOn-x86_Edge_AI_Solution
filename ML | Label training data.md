@@ -41,8 +41,6 @@
 
 * You can upload up to 64 images in a single batch in an app developed with the above-mentioned APIs/SDKs.
 
-# !!! [待補] 能否提供labeled data的轉換範例程式碼
-
 ### Label images
 
 * Click `Untagged` and then you can start to label images through its friendly UI/UX design. ( Moreover you also can enjoy auto-labeling if you already have at least one trained model in the project.)
