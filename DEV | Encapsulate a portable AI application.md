@@ -140,6 +140,7 @@ $ sudo docker commit advantech_edge_ai:v1
 #### Run the new image
 * We wrote a shell script, `run_detection.sh`, to run the new image, `advantech_edge_ai:v1`, and automatically execute `app_video.py` to display online detection result.
 
+<run_detection.sh>
 ```
 #! bash/bash
 
