@@ -99,7 +99,7 @@ Therein the `Dockerfile` in the unzipped directory includes required actions to 
 * In order to display the result and use GPU to increase the performance, openCV and cudnn, which GeForce GTX 1650 is used, are necessary.
 * Enter the following command in terminal
 ```
-$ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.3.1_2.9.1_3.4.16-20220815
+$ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815
 ```
 <p align="center">
   <img width="600" src="image\21.png">
@@ -109,12 +109,41 @@ $ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.3.1_2.9.1_3.4.16-2022
 ```
 $ sudo docker image ls
 ```
+
+#### Run a image as a container
+* First, we start a container to be a base for create a custom image
+* In order to run the container and automatically activate your own application, you have to copy files from your local directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container you create. In this demo, I create a folder named `advan` in my container, and there are model file, .py files, and a video in it.
+* Enter the following command
+```
+$ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
+```
+
 <p align="center">
   <img width="600" src="image\22.png">
 </p>
 
-#### Run a image as a container
-* 
+_REMARK_: Keep the container alive.
+
+#### Create a image from a container
+* Make sure you have updated the contents of the running container and just enter the following command.
+
+```
+$ sudo docker commit <your image name>:<your tag name>
+```
+
+<p align="center">
+  <img width="600" src="image\23.png">
+</p>
+
+> After it successes, you can delete the base image, `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815`.
+
+#### Run the new image
+* We wrote a shell script to run the new image and automatically execute `app_video.py` to display online detection result.
+
+<p align="center">
+  <img width="600" src="image\25.png">
+</p>
+
 
 # !!!(待補) 另一個完整的打包方式
 
