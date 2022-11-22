@@ -40,10 +40,10 @@ Therein the `Dockerfile` in the unzipped directory includes required actions to 
 
 > To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
-With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
+* With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
+* There is a more flexible way to execute the inference with the model of Azure Dockerfile format, and this way allows you to fed in video input, show the result in real-time, and save it as a video format. You can decide one of the two methods according your need.
 
-Now let's start to build up a **Docker Image** firstly.
-
+### 1. Azure Custom Vision's dockerfile
 #### Build up a Docker image
 
   1. Open a terminal and move to the directory of the docker file.
@@ -93,6 +93,28 @@ Now let's start to build up a **Docker Image** firstly.
 <p align="center">
   <img width="600" src="image\19.png">
 </p>
+
+### 2. Custom docker image
+#### Pull docker image
+* In order to display the result and use GPU to increase the performance, openCV and cudnn, which GeForce GTX 1650 is used, are necessary.
+* Enter the following command in terminal
+```
+$ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.3.1_2.9.1_3.4.16-20220815
+```
+<p align="center">
+  <img width="600" src="image\21.png">
+</p>
+
+* After finishing, enter the following command to check if the image is existed. If it is, `datamachines/cudnn_tensorflow_opencv` will be shown.
+```
+$ sudo docker image ls
+```
+<p align="center">
+  <img width="600" src="image\22.png">
+</p>
+
+#### Run a image as a container
+* 
 
 # !!!(待補) 另一個完整的打包方式
 
