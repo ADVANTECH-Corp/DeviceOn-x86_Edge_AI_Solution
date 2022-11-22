@@ -110,6 +110,10 @@ $ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220
 $ sudo docker image ls
 ```
 
+<p align="center">
+  <img width="600" src="image\22.png">
+</p>
+
 #### Run a image as a container
 * First, we start a container to be a base for create a custom image
 * In order to run the container and automatically activate your own application, you have to copy files from your local directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container you create. In this demo, I create a folder named `advan` in my container, and there are model file, .py files, and a video in it.
@@ -117,12 +121,7 @@ $ sudo docker image ls
 ```
 $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
 ```
-
-<p align="center">
-  <img width="600" src="image\22.png">
-</p>
-
-_REMARK_: Keep the container alive.
+> _REMARK_: Keep the container alive.
 
 #### Create a image from a container
 * Make sure you have updated the contents of the running container and just enter the following command.
