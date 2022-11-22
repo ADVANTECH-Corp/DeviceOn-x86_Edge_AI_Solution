@@ -138,12 +138,21 @@ $ sudo docker commit advantech_edge_ai:v1
 > After it successes, you can delete the base image, `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815`.
 
 #### Run the new image
-* We wrote a shell script to run the new image and automatically execute `app_video.py` to display online detection result.
+* We wrote a shell script, `run_detection.sh`, to run the new image, `advantech_edge_ai:v1`, and automatically execute `app_video.py` to display online detection result.
+
+```
+#! bash/bash
+
+sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v -dt advantech_edge_ai:v1 python ../advan/app_video.py 
+```
+
+<p align="center">
+  <img width="600" src="image\24.png">
+</p>
 
 <p align="center">
   <img width="600" src="image\25.png">
 </p>
-
 
 # !!!(待補) 另一個完整的打包方式
 
