@@ -14,7 +14,9 @@ Prerequisites
 
 Step 1: How to Upload Your Training Data Automatically
 ---
- 
+
+ ### !!! [待補] 提供labeled data的轉換範例程式碼
+
  ### <font color=darkgrey> Upload to Azure Custom Vision (T.B.C)</font>
 
    ## !!!Need to Discuss with MW!!!
