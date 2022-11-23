@@ -36,15 +36,15 @@ Afterwards unzip the downloaded file, and the included files are listed as below
 
 Therein a `Dockerfile` will trigger required actions to pull/download the libraries for AI inference computing.
 
-## Use Docker file
+## Build a docker image including your model
 
 > To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
 * With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
 * There is a more flexible way to execute the inference with the model of Azure Dockerfile format, and this way allows you to feed in video input, show the result in real-time, and output it as a video format. You can decide one of the two methods according your need.
 
-### 1. Azure Custom Vision's dockerfile
-#### Build up a Docker image
+### 1. Dockerfile from Azure Custom Vision
+#### Build up a docker image
 
   1. Open a terminal and move to the directory of the docker file.
 
@@ -68,7 +68,7 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
   <img width="600" src="image\18.png">
 </p>
 
-#### Create and run a Docker container
+#### Create and run a docker container for image validation
 
 1. Enter the instruction:
 
@@ -94,9 +94,9 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
   <img width="600" src="image\19.png">
 </p>
 
-### 2. Custom docker image
-#### Pull docker image
-* In order to display the result and use GPU to increase the performance, openCV and cudnn, which GeForce GTX 1650 is used, are necessary.
+### 2. Docker image from Docker Hub
+#### Pull a base image
+* In order to visualize inference results and use GPU as accelerator to increase performance, openCV and cudnn, which Nvidia GPU card is used, are necessary.
 * Enter the following command in terminal
 ```
 $ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815
@@ -105,7 +105,7 @@ $ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220
   <img width="600" src="image\21.png">
 </p>
 
-* After finishing, enter the following command to check if the image is existed. If it is, `datamachines/cudnn_tensorflow_opencv` will be shown.
+* After finishing, enter the following command to check if a docker image of `datamachines/cudnn_tensorflow_opencv` exists.
 ```
 $ sudo docker image ls
 ```
@@ -114,33 +114,33 @@ $ sudo docker image ls
   <img width="600" src="image\22.png">
 </p>
 
-#### Run a image as a container
-* First, we start a container to be a base for create a custom image
-* In order to run the container and automatically activate your own application, you have to copy files from your local directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container you create. In this demo, I create a folder named `advan` in my container, and there are model file, .py files, and a video in it.
+#### Create and run a container with the base image
+* Firstly, we start a container to be a base for creating a customization docker image later. 
+* In order to automatically launch your own application in the container, you have to copy required files from your local host directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container that you created. In this repo, I created a folder named `advan` in my container, and there are a model file, .py files, and a video file as inference input in it.
 * Enter the following command
 ```
 $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
 ```
-> _REMARK_: Keep the container alive.
+> _REMARK_: Keep the container running while executing the command.
 
-#### Create a image from a container
-* Make sure you have updated the contents of the running container and just enter the following command.
+#### Encapsulate a customization docker image from the running container
+* Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
 
 ```
 $ sudo docker commit advantech_edge_ai:v1
 ```
-* After committing your container, type `$ sudo docker image ls` to check if it is successful.
+* After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
   <img width="600" src="image\23.png">
 </p>
 
-> After it successes, you can delete the base image, `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815`.
+> Once a new customization docker image is created successfully, you can delete the base image of `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815`.
 
-#### Run the new image
-* We wrote a shell script, `run_detection.sh`, to run the new image, `advantech_edge_ai:v1`, and automatically execute `app_video.py` to display online detection result.
+#### Create and run a docker container for the customization image validation
+* We prepared a shell script as show below, `run_detection.sh`, to run a docker container with the customization image of `advantech_edge_ai:v1`, and also to execute `app_video.py` to show up visualized recognition results.
 
-<run_detection.sh>
+<run_detection.sh>：
 ```
 #! bash/bash
 
@@ -154,8 +154,3 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 <p align="center">
   <img width="600" src="image\25.png">
 </p>
-
-# !!!(待補) 另一個完整的打包方式
-
-1包cotainer image，包括AI app, inference data, inference server, AI model, ...
-(之後進版時，再整理比較合理的作法：2包container images，1包主要是AI app + inference data；另1包主要是inference server + AI model。)
