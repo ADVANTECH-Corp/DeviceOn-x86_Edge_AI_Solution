@@ -28,20 +28,20 @@ To get a required docker file, select `Linux`, then click `Download` and finally
   <img width="600" src="image\15.png">
 </p>
 
-Afterwards unzip the downloaded file, and it would be like as below.
+Afterwards unzip the downloaded file, and the included files are listed as below.
 
 <p align="center">
   <img width="600" src="image\16.png">
 </p>
 
-Therein the `Dockerfile` in the unzipped directory includes required actions to pull/download the libraries for AI inference computing.
+Therein a `Dockerfile` will trigger required actions to pull/download the libraries for AI inference computing.
 
 ## Use Docker file
 
 > To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
 * With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
-* There is a more flexible way to execute the inference with the model of Azure Dockerfile format, and this way allows you to fed in video input, show the result in real-time, and save it as a video format. You can decide one of the two methods according your need.
+* There is a more flexible way to execute the inference with the model of Azure Dockerfile format, and this way allows you to feed in video input, show the result in real-time, and output it as a video format. You can decide one of the two methods according your need.
 
 ### 1. Azure Custom Vision's dockerfile
 #### Build up a Docker image
