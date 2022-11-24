@@ -94,14 +94,23 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
   <img width="600" src="image\19.png">
 </p>
 
+#### Encapsulate a customization docker image from the running container
+
 * We can commit this container to an image for uploading to ACR.
- 
-<p align="center">
-  <img width="600" src="image\26.png">
-</p>
+
+> _REMARK_: Keep the container running while executing the command.
+
+* Open a new terminal and check the running container ID, and then enter the following command
+
+```
+$ sudo docker commit <container ID> <your image name>
+```
+> for example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1`
+
+* After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
-  <img width="600" src="image\27.png">
+  <img width="600" src="image\26.png">
 </p>
 
 ### 2. Docker image from Docker Hub
@@ -131,14 +140,19 @@ $ sudo docker image ls
 ```
 $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
 ```
-> _REMARK_: Keep the container running while executing the command.
 
 #### Encapsulate a customization docker image from the running container
-* Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
+> Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
+
+> _REMARK_: Keep the container running while executing the command.
+
+* Open a new terminal and check the running container ID, and then enter the following command
 
 ```
-$ sudo docker commit advantech_edge_ai:v1
+$ sudo docker commit <container ID> <your image name>
 ```
+> for example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1`
+
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
