@@ -38,10 +38,17 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
 
 ## Build a docker image including your model
 
+Before you start to execute docker operations, something you must know is how to prepare a docker runtime/environment.
+
 > To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
-* With the **Docker file**, it actually runs a **TensorFlow model**. One key reason to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
-* There is a more flexible way to execute the inference with the model of Azure Dockerfile format, and this way allows you to feed in video input, show the result in real-time, and output it as a video format. You can decide one of the two methods according your need.
+In this repo, there are two examples to create a docker image for AI inference and deployment later.
+
+* With a **Docker file** from Auzre Custom Vision, it actually runs a **TensorFlow model**. One of key reasons to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
+
+* Moreover there is another complete example to execute inference with a model of Azure Dockerfile format. It allows you to feed in a video input, show inference results in real time, and output it as a video format.
+
+You can begin with one of them according to your need or interest.
 
 ### 1. Dockerfile from Azure Custom Vision
 #### Build up a docker image
@@ -94,9 +101,9 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
   <img width="600" src="image\19.png">
 </p>
 
-#### Encapsulate a customization docker image from the running container
+#### (Optional) Encapsulate a customization docker image from the running container
 
-* We can commit this container to an image for uploading to ACR.
+If you need to customize a docker image, the following commands will be also necessary for you after you put other necessary components or functionalities into the original container.  
 
 > _REMARK_: Keep the container running while executing the command.
 
@@ -105,13 +112,16 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
 ```
 $ sudo docker commit <container ID> <your image name>
 ```
-> for example: `sudo docker commit 3380f16f9163 advantech_factoryai:v0`
+
+( For example: `sudo docker commit 3380f16f9163 advantech_factoryai:v0` )
 
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
   <img width="600" src="image\26.png">
 </p>
+
+Finally, you can have a new docker image.
 
 ### 2. Docker image from Docker Hub
 #### Pull a base image
@@ -142,7 +152,7 @@ $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:
 ```
 
 #### Encapsulate a customization docker image from the running container
-> Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
+Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
 
 > _REMARK_: Keep the container running while executing the command.
 
@@ -151,7 +161,8 @@ $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:
 ```
 $ sudo docker commit <container ID> <your image name>
 ```
-> for example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1`
+
+( For example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1` )
 
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
@@ -159,7 +170,7 @@ $ sudo docker commit <container ID> <your image name>
   <img width="600" src="image\23.png">
 </p>
 
-> Once a new customization docker image is created successfully, you can delete the base image of `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815`.
+Once a new customization docker image is created successfully, you can delete the base image  `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815` for saving your storage.
 
 #### Create and run a docker container for the customization image validation
 * We prepared a shell script as show below, `run_detection.sh`, to run a docker container with the customization image of `advantech_edge_ai:v1`, and also to execute `app_video.py` to show up visualized recognition results.
