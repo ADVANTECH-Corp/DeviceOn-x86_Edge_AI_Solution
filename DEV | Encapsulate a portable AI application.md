@@ -70,28 +70,38 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
 
 #### Create and run a docker container for image validation
 
-1. Enter the instruction:
+* Enter the instruction:
 
   ```
     sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
-2. To check if the docker container is running successfully, launch a web browser and then enter `localhost`, `127.0.0.1:80` or your virtual manchine ip. Finally, we would say it works normally for now if you can see a `CustomVision.ai model host harness` is there.
+* To check if the docker container is running successfully, launch a web browser and then enter `localhost`, `127.0.0.1:80` or your virtual manchine ip. Finally, we would say it works normally for now if you can see a `CustomVision.ai model host harness` is there.
 
 <p align="center">
   <img width="600" src="image\20.png">
 </p>
 
-3. You also can use a image file in your device to do a simple test with the following instruction.
+* You also can use a image file in your device to do a simple test with the following instruction.
 
   ```
     curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
   ```
 
-4. Finally you can see inference result printed in the terminal window.
+* You can see inference result printed in the terminal window.
 
 <p align="center">
   <img width="600" src="image\19.png">
+</p>
+
+* We can commit this container to an image for uploading to ACR.
+ 
+<p align="center">
+  <img width="600" src="image\26.png">
+</p>
+
+<p align="center">
+  <img width="600" src="image\27.png">
 </p>
 
 ### 2. Docker image from Docker Hub
