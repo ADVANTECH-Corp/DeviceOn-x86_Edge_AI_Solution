@@ -105,7 +105,7 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
 ```
 $ sudo docker commit <container ID> <your image name>
 ```
-> for example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1`
+> for example: `sudo docker commit 3380f16f9163 advantech_factoryai:v0`
 
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
