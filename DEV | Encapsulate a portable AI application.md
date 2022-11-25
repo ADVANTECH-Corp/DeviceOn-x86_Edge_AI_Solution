@@ -260,7 +260,7 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 </p>
  
 * Push your image.
-> User docker tag to create an alias of the image with the fully qualified path, which means the name of alias must include registry url just like our example.
+> Use docker tag to create an alias of the image with the fully qualified path, which means the name of alias must include registry url just like our example.
 
 <p align="center">
   <img width="600" src="image\38.png">
