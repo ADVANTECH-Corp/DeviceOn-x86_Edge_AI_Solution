@@ -225,6 +225,8 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 
 In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI deployment at scale.For your containerized AI, we can use ACR as an interface to make DevcieOn accessible to your docker images. Let's see how to set up your ACR and then push your docker image onto ACR for further deployment by DeviceOn.
 
+更完整的內容，可以在xxxx的video裡查看。
+
 #### Set up your ACR (Azure Container Registry)
 * Go to Azure Marketplace and search `container registry`
 
@@ -242,24 +244,36 @@ In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI d
   <img width="600" src="image\33_1.png">
 </p>
 
-#### Configure ACR into DeviceOn Server
-* Access keys
+#### Establish a connection between ACR and DeviceOn server
+* Get ACR access keys
+
+Click `Access keys` in `Settings` of  your ACR page.
+Here are necessary information for an ACR configuration in DeviceOn. 
 
 <p align="center">
   <img width="600" src="image\34.png">
 </p>
 
-#### Add a registry on WISE-DviceOn
+* Add a registry in DeviceOn
+
+Click the `Container | Registry` and then the icon of `+`. 
+
 <p align="center">
   <img width="600" src="image\35.png">
 </p>
+
+Fill in the necessary infomation referred to the `Access keys` in `Settings` of  your ACR page.
+
+Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
 
 <p align="center">
   <img width="600" src="image\36.png">
 </p>
 
-#### Push an image to ACR
-* Go back to your linux, and login WISE-DviceOn.
+Then press `Confirm` to complete this ACR connection with DeviceOn. 
+
+#### Push an docker image to ACR
+* Login WISE-DviceOn.
 
 <p align="center">
   <img width="600" src="image\37.png">
