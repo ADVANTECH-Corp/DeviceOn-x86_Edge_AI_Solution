@@ -1,10 +1,10 @@
  ### Sign in [Azure Custom Vision - Home](https://www.customvision.ai/) to start your vision AI project
 
+> Or create your [free Azure account](https://azure.microsoft.com/en-ca/free/) to start
+
 <p align="center">
   <img width="600" src="image\1.png">
 </p>
-
-> Or create your [free Azure account](https://azure.microsoft.com/en-ca/free/) to start
 
 ### Create a new project
 
