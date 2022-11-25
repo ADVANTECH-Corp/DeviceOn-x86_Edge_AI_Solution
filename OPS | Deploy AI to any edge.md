@@ -102,7 +102,7 @@ Once your DeviceOn server installed, you could start to follow steps to onboardi
 ![](https://i.imgur.com/30uFMjk.png)
 
 
-Step 2: Enalbe and Configure Azure Container Registry on DeviceOn
+Step 2: Enable and Configure Azure Container Registry on DeviceOn
 ---
 
 ### 1. Configure Container Registry
