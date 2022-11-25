@@ -190,7 +190,9 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
   <img width="600" src="image\25.png">
 </p>
 
-## Upload your image to ACR (Azure Container Registry)
+## Upload your docker image to ACR (Azure Container Registry)
+
+### (以下，應該不用在這裡提, Gary 11/25)
 #### Install WISE-Agent
 > We use `WISE-DeviceOn` to simplify this whole procedure, uploading image from your local device to Azure. 
 * Registry `WISE-DeviceOn` on http://deviceon.wise-paas.com.
@@ -219,7 +221,11 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
   <img width="600" src="image\31.png">
 </p>
 
-#### Create Container Registry on Azure
+### (以上，應該不用在這裡提, Gary 11/25)
+
+In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI deployment at scale.For your containerized AI, we can use ACR as an interface to make DevcieOn accessible to your docker images. Let's see how to set up your ACR and then push your docker image onto ACR for further deployment by DeviceOn.
+
+#### Set up your ACR (Azure Container Registry)
 * Go to Azure Marketplace and search `container registry`
 
 <p align="center">
