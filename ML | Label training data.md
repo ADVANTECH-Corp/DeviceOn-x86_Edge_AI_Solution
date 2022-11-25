@@ -4,7 +4,7 @@
   <img width="600" src="image\1.png">
 </p>
 
-# !!! [待補] (描述如何註冊Azure account 和 如何開啟Azure Custom Vision功能)
+> Or create your [free Azure account](https://azure.microsoft.com/en-ca/free/) to start
 
 ### Create a new project
 
