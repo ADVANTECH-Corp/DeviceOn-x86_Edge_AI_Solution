@@ -45,7 +45,7 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 
 * [Images for labeling and training](https://advantecho365-my.sharepoint.com/:u:/g/personal/gary70_lin_advantech_com/Eap595EF6FJDplH1unr1bY8B-cv_BlD1m0fZ2k_96hPXfw?e=Z4GVbj)
 
-* [Video clip for inference](https://advantecho365-my.sharepoint.com/:u:/g/personal/gary70_lin_advantech_com/Eap595EF6FJDplH1unr1bY8B-cv_BlD1m0fZ2k_96hPXfw?e=Z4GVbj)
+* [Video for inference](https://advantecho365-my.sharepoint.com/:u:/g/personal/gary70_lin_advantech_com/Eap595EF6FJDplH1unr1bY8B-cv_BlD1m0fZ2k_96hPXfw?e=Z4GVbj)
 
 ### App Uploading and Deployment
 
