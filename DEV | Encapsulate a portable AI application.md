@@ -225,7 +225,9 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 
 In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI deployment at scale.For your containerized AI, we can use ACR as an interface to make DevcieOn accessible to your docker images. Let's see how to set up your ACR and then push your docker image onto ACR for further deployment by DeviceOn.
 
-更完整的內容，可以在xxxx的video裡查看。
+> Here is a video for creating an Azure Container Registry to store your container images.
+> 
+> https://www.youtube.com/watch?v=KAZJlm3aVQw#t=111s
 
 #### Set up your ACR (Azure Container Registry)
 * Go to Azure Marketplace and search `container registry`
