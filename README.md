@@ -31,13 +31,13 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 
 * #### [**DEV | Encapsulate a portable AI application**](DEV%20|%20Encapsulate%20a%20portable%20AI%20application.md)
 
-* #### [**DEV | Automate AI lifecycle**](DEV%20|%20Automate%20AI%20lifecycle.md)
+* #### *(Available later)* **DEV | Automate AI lifecycle**
 
 * #### [**OPS | Deploy AI to any edge**](OPS%20|%20Deploy%20AI%20to%20any%20edge.md)
 
-* #### [**OPS | Collect training, inference, and performance data**](OPS%20|%20Collect%20training,%20inference,%20and%20performance%20data.md)
+* #### *(Available later)* **OPS | Collect training, inference, and performance data**
 
-* #### [**OPS | Monitor and manage large-scale devices**](OPS%20|%20Monitor%20and%20manage%20large-scale%20devices.md)
+* #### *(Available later)* **OPS | Monitor and manage large-scale devices**
 
 ## Reference Resources
 
