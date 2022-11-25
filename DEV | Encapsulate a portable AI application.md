@@ -194,11 +194,12 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 #### Install WISE-Agent
 * We use `WISE-DeviceOn` to simplify this whole procedure, uploading image from your local device to Azure. 
 * Registry `WISE-DeviceOn` on http://deviceon.wise-paas.com.
-* Setup and onboard ypur linux device with Credential and IoT key, and these will be used when you login `WISE-Agent`.
 
 <p align="center">
   <img width="600" src="image\27.png">
 </p>
+
+* Setup and onboard ypur linux device with Credential and IoT key, and these will be used when you login `WISE-Agent`.
 
 <p align="center">
   <img width="600" src="image\28.png">
