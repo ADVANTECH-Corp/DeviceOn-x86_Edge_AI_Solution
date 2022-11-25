@@ -254,6 +254,8 @@ Here are necessary information for an ACR configuration in DeviceOn.
   <img width="600" src="image\34.png">
 </p>
 
+(以下，應該不用在這裡提, Gary 11/25)
+
 * Add a registry in DeviceOn
 
 Click the `Container | Registry` and then the icon of `+`. 
@@ -271,6 +273,8 @@ Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
 </p>
 
 Then press `Confirm` to complete this ACR connection with DeviceOn. 
+
+(以下，應該不用在這裡提, Gary 11/25)
 
 #### Push an docker image to ACR
 * Login your ACR with the above-mentioned connection info in your build machine.
