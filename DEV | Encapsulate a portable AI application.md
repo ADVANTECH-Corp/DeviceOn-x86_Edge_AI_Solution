@@ -192,7 +192,7 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 
 ## Upload your image to ACR (Azure Container Registry)
 #### Install WISE-Agent
-* We use `WISE-DeviceOn` to simplify this whole procedure, uploading image from your local device to Azure. 
+> We use `WISE-DeviceOn` to simplify this whole procedure, uploading image from your local device to Azure. 
 * Registry `WISE-DeviceOn` on http://deviceon.wise-paas.com.
 
 <p align="center">
@@ -205,31 +205,35 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
   <img width="600" src="image\28.png">
 </p>
 
-* Install [WISE-Agent](), which it has two version, Linux and Windows. Since we do this practice in Unbuntu 20.04, `wise-agent-Ubuntu_20.04-x86_64-1.4.45.0.run` is used.
-
 <p align="center">
   <img width="600" src="image\29.png">
 </p>
 
+* Install [WISE-Agent](), which it has two version, Linux and Windows. Since we do this practice in Unbuntu 20.04, `wise-agent-Ubuntu_20.04-x86_64-1.4.45.0.run` is used.
+
 <p align="center">
   <img width="600" src="image\30.png">
+</p>
+
+<p align="center">
+  <img width="600" src="image\31.png">
 </p>
 
 #### Create Container Registry on Azure
 * Go to Azure Marketplace and search `container registry`
 
 <p align="center">
-  <img width="600" src="image\31.png">
+  <img width="600" src="image\32.png">
 </p>
 
 * Create Container Registry
 
 <p align="center">
-  <img width="600" src="image\32.png">
+  <img width="600" src="image\33.png">
 </p>
 
 <p align="center">
-  <img width="600" src="image\33.png">
+  <img width="600" src="image\33_1.png">
 </p>
 
 #### Configure ACR into DeviceOn Server
@@ -254,19 +258,13 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 <p align="center">
   <img width="600" src="image\37.png">
 </p>
-
-* User docker tag to create an alias of the image with the fully qualified path, which means the name of alias must include registry url just like our example.
+ 
+* Push your image.
+> User docker tag to create an alias of the image with the fully qualified path, which means the name of alias must include registry url just like our example.
 
 <p align="center">
   <img width="600" src="image\38.png">
 </p>
-
-* Then push your image
-
-<p align="center">
-  <img width="600" src="image\39.png">
-</p>
-
 
 
 
