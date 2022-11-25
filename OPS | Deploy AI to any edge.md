@@ -163,3 +163,9 @@ Step 3: Deploy a Container to Edge Device through DeviceOn
 > If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
 
 ![](https://i.imgur.com/4b1heFK.png)
+
+You will see the container is remotely launched to execute inference.
+
+<p align="center">
+  <img width="600" src="image\25.png">
+</p>
