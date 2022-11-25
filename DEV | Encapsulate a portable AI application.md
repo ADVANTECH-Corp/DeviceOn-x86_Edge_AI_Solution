@@ -273,19 +273,23 @@ Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
 Then press `Confirm` to complete this ACR connection with DeviceOn. 
 
 #### Push an docker image to ACR
-* Login WISE-DviceOn.
+* Login your ACR with the above-mentioned connection info in your build machine.
+
+```
+$ sudo docker login <your registry URL>
+```
 
 <p align="center">
   <img width="600" src="image\37.png">
 </p>
  
-* Push your image.
-> Use docker tag to create an alias of the image with the fully qualified path, which means the name of alias must include registry url just like our example.
+* Upload your docker image to ACR.
+> Use docker tag to create an alias of the image with the fully qualified path, which means an alias name must include registry url, just like our example.
+
+```
+$ sudo docker push <registry URL/container image filename>
+```
 
 <p align="center">
   <img width="600" src="image\38.png">
 </p>
-
-
-
-
