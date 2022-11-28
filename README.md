@@ -31,13 +31,13 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 
 * #### [**DEV | Encapsulate a portable AI application**](DEV%20|%20Encapsulate%20a%20portable%20AI%20application.md)
 
-* #### **DEV | Automate AI lifecycle** *(Available later)*
+* #### **DEV | Automate AI lifecycle** *(Available later[^1])* 
 
 * #### [**OPS | Deploy AI to any edge**](OPS%20|%20Deploy%20AI%20to%20any%20edge.md)
 
-* #### **OPS | Collect training, inference, and performance data** *(Available later)*
+* #### **OPS | Collect training, inference, and performance data** *(Available later[^1])*
 
-* #### **OPS | Monitor and manage large-scale devices** *(Available later)*
+* #### **OPS | Monitor and manage large-scale devices** *(Available later[^1])*
 
 ## Reference Resources
 
@@ -62,3 +62,5 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 * [Container management](https://youtu.be/bilP6FpyU0M?t=145)
 
 ### [More about DeviceOn](https://campaign.advantech.online/en/DeviceOn/index.html#SolutionPackages)
+
+[^1]: **Leave a message|wowaiot.wseg@advantech.com to get a notification in time once overall contents are available!**
