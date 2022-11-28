@@ -1,3 +1,12 @@
+## * Set an ACR connnection in DeviceOn
+
+...
+
+## * Manipulate container deployment from ACR to AI edge(s) through DeviceOn 
+
+...
+
+# (以下 參考資料 from Sephi，待重整)
 # Operation - Deploy AI to Edge Device
 
 - [Operation - Deploy AI to Edge Device](#operation---deploy-ai-to-edge-device)
