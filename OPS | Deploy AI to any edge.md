@@ -1,16 +1,12 @@
 Purpose
 ---
-Through the IoT device platform called `DeviceOn` to provides containers management to help AI developer or system opterator to batch provision inference container to edge devices. DeviceOn is the best platform not only manage contaienr but application. In the section, we would like to focus on how to deploy your container to edge devices and furhter remotely controll it through `DeviceOn`.
+Through the IoT device platform called `DeviceOn` to provide containers management to help AI developer or system opterator to batch provision inference container to edge devices. 'DeviceOn' is the best platform not only manage contaienr but application. In the section, we would like to focus on how to deploy your container to edge devices and furhter remotely controll it through `DeviceOn`.
 
 Prerequisites
 ---
 - A workable DeviceOn server must be installed and running without problems. You could refer to the [documentation](https://docs.wise-paas.advantech.com/en/Guides_and_API_References/ApplicationServices/1564727799415968385/1589506780729736622/v1.0.0) of DeviceOn to set up your own server.
-- An edge device for Ubuntu Linux 18.04/20.04 ready.
-- An Azrue Container Regiesty created.
-
-(前置作業) 創建DeviceOn server
-1. 怎麼安裝自己的DeviceOn (on premise(主), azure vm)
-2. 申請90天的試用key
+- [A 90-day trial key](https://www.youtube.com/watch?v=tjZUchu0v2I&t=64s) for DeviceOn server activation.
+- EPC-B5587 with Linux [Ubuntu 20.04](https://campaign.advantech.online/en/embedded_software/index.html) ready.
 
 ## Connect your device to DeviceOn server
 
