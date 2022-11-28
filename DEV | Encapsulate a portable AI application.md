@@ -191,38 +191,6 @@ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/t
 </p>
 
 ## Upload your docker image to ACR (Azure Container Registry)
-
-### (以下，應該不用在這裡提, Gary 11/25)
-#### Install WISE-Agent
-> We use `WISE-DeviceOn` to simplify this whole procedure, uploading image from your local device to Azure. 
-* Registry `WISE-DeviceOn` on http://deviceon.wise-paas.com.
-
-<p align="center">
-  <img width="600" src="image\27.png">
-</p>
-
-* Setup and onboard ypur linux device with Credential and IoT key, and these will be used when you login `WISE-Agent`.
-
-<p align="center">
-  <img width="600" src="image\28.png">
-</p>
-
-<p align="center">
-  <img width="600" src="image\29.png">
-</p>
-
-* Install [WISE-Agent](), which it has two version, Linux and Windows. Since we do this practice in Unbuntu 20.04, `wise-agent-Ubuntu_20.04-x86_64-1.4.45.0.run` is used.
-
-<p align="center">
-  <img width="600" src="image\30.png">
-</p>
-
-<p align="center">
-  <img width="600" src="image\31.png">
-</p>
-
-### (以上，應該不用在這裡提, Gary 11/25)
-
 In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI deployment at scale.For your containerized AI, we can use ACR as an interface to make DevcieOn accessible to your docker images. Let's see how to set up your ACR and then push your docker image onto ACR for further deployment by DeviceOn.
 
 > Here is a video for creating an Azure Container Registry to store your container images.
@@ -247,7 +215,7 @@ In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI d
 </p>
 
 #### Push an docker image to ACR
-* Get ACR access keys
+* Get the ACR access key
 
 Click `Access keys` in `Settings` of  your ACR page.
 Here are necessary information for an ACR configuration in DeviceOn. 
@@ -255,28 +223,6 @@ Here are necessary information for an ACR configuration in DeviceOn.
 <p align="center">
   <img width="600" src="image\34.png">
 </p>
-
-(以下，應該不用在這裡提, Gary 11/25)
-
-* Add a registry in DeviceOn
-
-Click the `Container | Registry` and then the icon of `+`. 
-
-<p align="center">
-  <img width="600" src="image\35.png">
-</p>
-
-Fill in the necessary infomation referred to the `Access keys` in `Settings` of  your ACR page.
-
-Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
-
-<p align="center">
-  <img width="600" src="image\36.png">
-</p>
-
-Then press `Confirm` to complete this ACR connection with DeviceOn. 
-
-(以下，應該不用在這裡提, Gary 11/25)
 
 * Login your ACR with the above-mentioned connection info in your build machine.
 
