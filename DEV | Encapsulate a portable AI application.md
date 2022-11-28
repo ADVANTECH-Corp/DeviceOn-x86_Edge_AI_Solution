@@ -246,7 +246,7 @@ In this repo, we will use ADVANTECH DeviceOn to simplify and accelerate you AI d
   <img width="600" src="image\33_1.png">
 </p>
 
-#### Establish a connection between ACR and DeviceOn server
+#### Push an docker image to ACR
 * Get ACR access keys
 
 Click `Access keys` in `Settings` of  your ACR page.
@@ -278,7 +278,6 @@ Then press `Confirm` to complete this ACR connection with DeviceOn.
 
 (以下，應該不用在這裡提, Gary 11/25)
 
-#### Push an docker image to ACR
 * Login your ACR with the above-mentioned connection info in your build machine.
 
 ```
