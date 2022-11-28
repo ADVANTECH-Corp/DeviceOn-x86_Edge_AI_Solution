@@ -4,7 +4,7 @@ Through the IoT device platform called `DeviceOn` to provide containers manageme
 
 Prerequisites
 ---
-- A workable DeviceOn server must be installed and running without problems. You could refer to the [documentation](https://docs.wise-paas.advantech.com/en/Guides_and_API_References/ApplicationServices/1564727799415968385/1589506780729736622/v1.0.0) of DeviceOn to set up your own server.
+- A workable [DeviceOn server](https://eiot.blob.core.windows.net/deviceon/DeviceOn_Server.zip) must be installed and running without problems. You could refer to the [documentation](https://docs.wise-paas.advantech.com/en/Guides_and_API_References/ApplicationServices/1564727799415968385/1589506780729736622/v1.0.0) of DeviceOn to set up your own server.
 - [A 90-day trial key](https://www.youtube.com/watch?v=tjZUchu0v2I&t=64s) for DeviceOn server activation.
 - EPC-B5587 with Linux [Ubuntu 20.04](https://campaign.advantech.online/en/embedded_software/index.html) ready.
 
