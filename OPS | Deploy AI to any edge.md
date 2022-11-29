@@ -88,7 +88,7 @@ Prerequisites
 
 ## Manipulate container deployment from ACR to AI edge(s) through DeviceOn 
 #### 1. Synchronize Registry
-> Select your registries and click on <i class="fa fa-refresh" aria-hidden="true"></i> icon to synchronize the docker image list to DeviceOn
+* Select your registries and click on <i class="fa fa-refresh" aria-hidden="true"></i> icon to synchronize the docker image list to DeviceOn
 
 <p align="center">
   <img width="600" src="image\39.png">
@@ -98,7 +98,7 @@ Prerequisites
   <img width="600" src="image\40.png">
 </p>
 
-> Next, the repository and image listing information is displayed on DeviceOn, and you can start deploying these images to edge devices.
+* Next, the repository and image listing information is displayed on DeviceOn, and you can start deploying these images to edge devices.
 
 <p align="center">
   <img width="600" src="image\41.png">
@@ -120,26 +120,22 @@ Prerequisites
 * Click "**+**" icon to deploy a new container from your registry that we configured on Step 2.
 
 <p align="center">
-  <img width="600" src="image\44.png">
+  <img width="600" src="image\45.png">
 </p>
 
 * Enter the following values: 
-- Container name
-- Select your source images (from registry or device)
-- Select your image
-- Configure the container running parameters, such as port mapping, or specific command
+  - Container name
+  - Select your source images (from registry or device)
+  - Select your image
+  - Configure the container running parameters, such as port mapping, or specific command
 
 * Then, you could decide the container run automatically or manually start later. BTW, for batch deploy container, you may switch to "**Group Mode**" to select which device group need to run the container.
-
-* In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
-
-<p align="center">
-  <img width="600" src="image\45.png">
-</p>
 
 <p align="center">
   <img width="600" src="image\46.png">
 </p>
+
+* In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
 
 #### 4. Run your container at edge
 # (待換圖)
