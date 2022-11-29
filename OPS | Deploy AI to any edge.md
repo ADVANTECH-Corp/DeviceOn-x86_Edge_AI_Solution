@@ -34,7 +34,7 @@ Prerequisites
   <img width="600" src="image\27.png">
 </p>
 
-* Click the right-top icon `Add Device` for device connection and then you can see the info of both `Credential URL` and `IoT Key`. Both of them are necessary for finishing your WISE-Agent setup later.
+* Click one of icons where locates red circle to add device for device connection and then you can see the info of both `Credential URL` and `IoT Key`. Both of them are necessary for finishing your WISE-Agent setup later.
 
 <p align="center">
   <img width="600" src="image\28.png">
