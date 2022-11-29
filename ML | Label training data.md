@@ -26,7 +26,7 @@
 > There are two categories of data able to be imported to Azure Custom Vision. 1)untagged images; 2)tagged images. 
 
 ##### Untagged images
-* Click `Add images` and then select untagged images for uploading.
+* Click `Add images` and then select untagged images for uploading. (Here are [sample images](image/samples%20as%20training%20data/) for your practice.)
 
 * After finishing uploading, there will be a red dot showing on the `Untagged` button on left side to be a notificaiton.
 
