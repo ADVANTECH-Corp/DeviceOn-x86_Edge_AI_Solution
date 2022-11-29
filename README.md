@@ -37,8 +37,6 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 
 * #### **OPS | Collect training, inference, and performance data** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
 
-* #### **OPS | Monitor and manage large-scale devices** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
-
 ## Reference Resources
 
 ### Sample Data for Training and Inference
@@ -61,6 +59,4 @@ In the following sections, let’s find out how the above-mentioned Advantech ed
 
 * [Container management](https://youtu.be/bilP6FpyU0M?t=145)
 
-### [More about DeviceOn](https://campaign.advantech.online/en/DeviceOn/index.html#SolutionPackages)
-
-[^1]: **Leave a message|wowaiot.wseg@advantech.com to get a notification in time once overall contents are available!**
+### [More about DeviceOn](https://docs.wise-paas.advantech.com/en/Guides_and_API_References/ApplicationServices/1564727799415968385/1564727878040194797/v1.0.2)
