@@ -145,7 +145,7 @@ $ sudo docker image ls
 
 #### Create and run a container with the base image
 * Firstly, we start a container to be a base for creating a customization docker image later. 
-* In order to automatically launch your own application in the container, you have to copy required files from your local host directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container that you created. In this repo, I created a folder named `advan` in my container, and there are a model file, .py files, and a video file as inference input in it.
+* In order to automatically launch your own application in the container, you have to copy required files from your local host directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container that you created. In this repo, I created a folder named `advan` in my container, and there are `a model file from Azure Custom Vision`, [.py files](sample%20codes/python/), and [a video file](video/) as inference input in it.
 * Enter the following command
 ```
 $ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
