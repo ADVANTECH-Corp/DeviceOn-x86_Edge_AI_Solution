@@ -24,6 +24,8 @@ Prerequisites
   <img width="600" src="image\31.png">
 </p>
 
+> The details of configurations in above picture are shown in the 3rd step.
+
 #### 2. Login your DeviceOn portal to get connection info
 
 * Open your `DeviceOn` portal with a web brwoser.
@@ -45,30 +47,21 @@ Prerequisites
 > Please note that keep or save `Credential URL` and `IoT Key` for setting up WISE-Agnet.
 
 #### 3. Connect your device with WISE-Agent to the DeviceOn server
-Change your directory to `/usr/local/AgentService` and run sudo `./setup.sh` to answer connection information, such as credential URL, IoTKey, Device Name and etc.
-
-<p align="center"> 
- <img width="600" src="https://i.imgur.com/DfOk1Vz.png">
-</p>
-
-> Zero-touch onboard is a zero-configuration and quick connection mode for a special purpose. The default is disabled (n).
-
-> Enter Credential URL and IoT Key that information could retrieve from the DeviceOn portal.
-
-#### 4. Make your device accessible for all (or specific) DeviceOn accounts 
-# (待更新圖，下圖的Select Devices和Confirm頁面)
+* Turn on a terminal on your device.
+* Change your directory to `/usr/local/AgentService` and run sudo `./setup.sh` to answer connection information, such as credential URL, IoTKey, Device Name and etc. After finishing these, it will make your device accessible for all (or specific) DeviceOn accounts.
 
 <p align="center">
-  <img width="600" src="image\29.png">
+  <img width="600" src="image\31.png">
 </p>
 
-* Assign device to User Account: You can bind the target device into a `Default` group in your account on the portal automatically.
-* Enable TLS: Turn ON/OFF the TLS/SSL mode.
-* Input Device Name: Give your device name and show it on the portal.
-* Input AMT ID and password: If your device support Intel AMT, please enter AMT ID and Password to enable these functions.
-* Select KVM Mode [0:default, 1:Custom VNC, 2:disable]: User can use our default VNC to support the Remote Desktop function by entering 0 and give a listen port if you don’t want to use the default port. Second, select Custom Mode, if they already have a VNC server by entering 1 and provide the listen port and password. To disable the KVM function by entering 2.
-
-> When you run into this step the question shows like above, device is connected and under your account
+> Remark
+> * `Zero-touch onboard` is a zero-configuration and quick connection mode for a special purpose. The default is disabled (n).
+> * Enter `Credential URL` and `IoT Key` that information could retrieve from the DeviceOn portal.
+> * `Assign device to User Account`: You can bind the target device into a `Default` group in your account on the portal automatically.
+> * Enable `TLS`: Turn ON/OFF the TLS/SSL mode.
+> * Input `Device Name`: Give your device name and show it on the portal.
+> * Input `AMT ID and password`: If your device support Intel AMT, please enter AMT ID and Password to enable these functions.
+> * Select `KVM Mode` [0:default, 1:Custom VNC, 2:disable]: User can use our default VNC to support the Remote Desktop function by entering 0 and give a listen port if you don’t want to use the default port. Second, select Custom Mode, if they already have a VNC server by entering 1 and provide the listen port and password. To disable the KVM function by entering 2.
 
 ## Set an ACR connection in DeviceOn
 #### Add a registry for ACR in DeviceOn
@@ -332,3 +325,18 @@ You will see the container is remotely launched to execute inference.
 <p align="center">
   <img width="600" src="image\25.png">
 </p>
+
+#### 4. Make your device accessible for all (or specific) DeviceOn accounts 
+# (待更新圖，下圖的Select Devices和Confirm頁面)
+
+<p align="center">
+  <img width="600" src="image\29.png">
+</p>
+
+* Assign device to User Account: You can bind the target device into a `Default` group in your account on the portal automatically.
+* Enable TLS: Turn ON/OFF the TLS/SSL mode.
+* Input Device Name: Give your device name and show it on the portal.
+* Input AMT ID and password: If your device support Intel AMT, please enter AMT ID and Password to enable these functions.
+* Select KVM Mode [0:default, 1:Custom VNC, 2:disable]: User can use our default VNC to support the Remote Desktop function by entering 0 and give a listen port if you don’t want to use the default port. Second, select Custom Mode, if they already have a VNC server by entering 1 and provide the listen port and password. To disable the KVM function by entering 2.
+
+> When you run into this step the question shows like above, device is connected and under your account
