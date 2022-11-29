@@ -66,15 +66,15 @@ Prerequisites
 ## Set an ACR connection in DeviceOn
 #### Add a registry for ACR in DeviceOn
 
-Click the `Container | Registry` and then the icon of `+`. 
+* Click the `Container | Registry` and then the icon of `+`. 
 
 <p align="center">
   <img width="600" src="image\35.png">
 </p>
 
-Fill in the necessary infomation referred to the `Access keys` in `Settings` of  your ACR page.
+* Fill in the necessary infomation referred to the `Access keys` in `Settings` of  your ACR page.
 
-Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
+* Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
 
 <p align="center">
   <img width="600" src="image\36.png">
@@ -84,7 +84,7 @@ Therein `Token` in DeviceOn means the 1st-row `password` in ACR.
   <img width="600" src="image\34.png">
 </p>
 
-Then press `Confirm` to complete this ACR connection with DeviceOn. 
+* Then press `Confirm` to complete this ACR connection with DeviceOn. 
 
 ## Manipulate container deployment from ACR to AI edge(s) through DeviceOn 
 #### 1. Synchronize Registry
@@ -326,17 +326,3 @@ You will see the container is remotely launched to execute inference.
   <img width="600" src="image\25.png">
 </p>
 
-#### 4. Make your device accessible for all (or specific) DeviceOn accounts 
-# (待更新圖，下圖的Select Devices和Confirm頁面)
-
-<p align="center">
-  <img width="600" src="image\29.png">
-</p>
-
-* Assign device to User Account: You can bind the target device into a `Default` group in your account on the portal automatically.
-* Enable TLS: Turn ON/OFF the TLS/SSL mode.
-* Input Device Name: Give your device name and show it on the portal.
-* Input AMT ID and password: If your device support Intel AMT, please enter AMT ID and Password to enable these functions.
-* Select KVM Mode [0:default, 1:Custom VNC, 2:disable]: User can use our default VNC to support the Remote Desktop function by entering 0 and give a listen port if you don’t want to use the default port. Second, select Custom Mode, if they already have a VNC server by entering 1 and provide the listen port and password. To disable the KVM function by entering 2.
-
-> When you run into this step the question shows like above, device is connected and under your account
