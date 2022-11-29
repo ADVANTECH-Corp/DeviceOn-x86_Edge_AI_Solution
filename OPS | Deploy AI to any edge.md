@@ -94,30 +94,34 @@ Prerequisites
   <img width="600" src="image\39.png">
 </p>
 
+<p align="center">
+  <img width="600" src="image\40.png">
+</p>
+
 > Next, the repository and image listing information is displayed on DeviceOn, and you can start deploying these images to edge devices.
 
 <p align="center">
-  <img width="600" src="image\40.png">
+  <img width="600" src="image\41.png">
 </p>
 
 #### 2. Open docker dashboard in DeviceOn
 > Through the dashboard, DeviceOn provides the summary of device docker status, for example how many container, images, volumes, and networks on that edge device. 
 
 <p align="center">
-  <img width="600" src="image\41.png">
+  <img width="600" src="image\42.png">
 </p>
 
 > Click on the **Containers** to shows details.
 
 <p align="center">
-  <img width="600" src="image\42.png">
+  <img width="600" src="image\43.png">
 </p>
 
 #### 3. Deploy a container to edge device
 > Click "**+**" icon to deploy a new container from your registry that we configured on Step 2.
 
 <p align="center">
-  <img width="600" src="image\43.png">
+  <img width="600" src="image\44.png">
 </p>
 
 > Enter the following values: 
@@ -131,7 +135,11 @@ Prerequisites
 > In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
 
 <p align="center">
-  <img width="600" src="image\44.png">
+  <img width="600" src="image\45.png">
+</p>
+
+<p align="center">
+  <img width="600" src="image\46.png">
 </p>
 
 #### 4. Run your container at edge
