@@ -140,7 +140,7 @@ Prerequisites
 > In the beginning, it is recommended that you deploy the container to a device to make sure your configuration works, and then do batch provisioning.
 
 #### 4. Run your container at edge
-* If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
+* If you do not enable "**Auto Start**" in `Add Container` step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
 
 <p align="center">
   <img width="600" src="image\47.png">
