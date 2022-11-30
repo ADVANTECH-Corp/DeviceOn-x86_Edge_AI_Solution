@@ -39,12 +39,6 @@ In this repository, a real use case of factory assembly line AI is implemented f
 
 ## Reference Resources
 
-### Sample Data for Training and Inference
-
-* [Images for labeling and training](https://advantecho365-my.sharepoint.com/:u:/g/personal/gary70_lin_advantech_com/Eap595EF6FJDplH1unr1bY8B-cv_BlD1m0fZ2k_96hPXfw?e=Z4GVbj)
-
-* [Video for inference](https://advantecho365-my.sharepoint.com/:u:/g/personal/gary70_lin_advantech_com/Eap595EF6FJDplH1unr1bY8B-cv_BlD1m0fZ2k_96hPXfw?e=Z4GVbj)
-
 ### App Uploading and Deployment
 
 * [Wrap an app](https://youtu.be/5wRANEF-nxM?t=171)
