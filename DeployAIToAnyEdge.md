@@ -131,14 +131,10 @@ Prerequisites
 
 * Then, you could decide the container run automatically or manually start later. BTW, for batch deploy container, you may switch to "**Group Mode**" to select which device group need to run the container.
 
-<p align="center">
-  <img width="600" src="image\46.png">
-</p>
-
 * For automatically activating object detetion, the most important thing is to set a proper docker api in `Advanced Mode` of `Container Settings`. [Here](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/sample%20codes/autorun_cmd.txt) is a example for this practice.
 
 <p align="center">
-  <img width="600" src="image\49.png">
+  <img width="600" src="image\46.png">
 </p>
 
 > In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
