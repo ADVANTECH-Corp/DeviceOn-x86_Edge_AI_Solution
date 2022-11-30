@@ -144,7 +144,7 @@ Prerequisites
   <img width="600" src="image\47.png">
 </p>
 
-* For automatically activating object detetion, the most important thing is to set a proper docker api in `Advanced Mode` of `Container Settings`. [Here]() is a example for this practice.
+* For automatically activating object detetion, the most important thing is to set a proper docker api in `Advanced Mode` of `Container Settings`. [Here](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/sample%20codes/autorun_cmd.txt) is a example for this practice.
 
 <p align="center">
   <img width="600" src="image\49.png">
