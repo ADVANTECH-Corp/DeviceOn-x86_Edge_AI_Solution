@@ -144,6 +144,12 @@ Prerequisites
   <img width="600" src="image\47.png">
 </p>
 
+* For automatically activating object detetion, the most important thing is to set a proper docker api in `Advanced Mode` of `Container Settings`. [Here]() is a example for this practice.
+
+<p align="center">
+  <img width="600" src="image\49.png">
+</p>
+
 <p align="center">
   <img width="600" src="image\48.png">
 </p>
