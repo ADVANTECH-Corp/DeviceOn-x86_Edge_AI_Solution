@@ -131,7 +131,7 @@ Prerequisites
 
 * Then, you could decide the container run automatically or manually start later. BTW, for batch deploy container, you may switch to "**Group Mode**" to select which device group to run the container.
 
-* To automatically create and run an AI inference container through DeviceOn server, the most important thing here is to set necessary commands/parameters in `Container Settings` of `Advanced Mode`. [Here](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/sample%20codes/autorun_cmd.txt) is an example of the container settings implemented in this repo.
+* To automatically create and run an AI inference container through DeviceOn server, the most important thing here is to set necessary commands/parameters in `Container Settings` of `Advanced Mode`. [Here](sample%20codes/autorun_cmd.txt) is an example of the container settings implemented in this repo.
 
 <p align="center">
   <img width="600" src="image\46.png">
