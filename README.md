@@ -35,7 +35,7 @@ In this repository, a real use case of factory assembly line AI is implemented f
 
 * #### [**OPS | Deploy AI to any edge**](OPS%20|%20Deploy%20AI%20to%20any%20edge.md)
 
-* #### **OPS | Collect training, inference, and performance data** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
+* #### **OPS | Collect data for re-training** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
 
 ## Reference Resources
 
