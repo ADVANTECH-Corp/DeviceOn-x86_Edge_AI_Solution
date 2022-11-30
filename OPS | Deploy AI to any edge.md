@@ -138,11 +138,14 @@ Prerequisites
 * In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
 
 #### 4. Run your container at edge
-# (待換圖)
-> If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
+* If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
 
 <p align="center">
-  <img width="600" src="https://i.imgur.com/4b1heFK.png">
+  <img width="600" src="image\47.png">
+</p>
+
+<p align="center">
+  <img width="600" src="image\48.png">
 </p>
 
 You will see the container is remotely launched to execute inference at your edge.
