@@ -25,15 +25,15 @@ In this repository, a real use case of factory assembly line AI is implemented f
 
 > ### **Step-by-step details are presented in the following sections**
 
-* #### [**ML | Label training data**](ML%20|%20Label%20training%20data.md)
+* #### [**ML | Label training data**](LabelTrainingData.md)
 
-* #### [**ML | Train an accurate enough AI model**](ML%20|%20Train%20an%20accurate%20enough%20AI%20model.md)
+* #### [**ML | Train an accurate enough AI model**](TrainAnAccurateEnoughAIModel.md)
 
-* #### [**DEV | Encapsulate a portable AI application**](DEV%20|%20Encapsulate%20a%20portable%20AI%20application.md)
+* #### [**DEV | Encapsulate a portable AI application**](EncapsulateAPortableAIApplication.md)
 
 * #### **DEV | Automate AI lifecycle** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
 
-* #### [**OPS | Deploy AI to any edge**](OPS%20|%20Deploy%20AI%20to%20any%20edge.md)
+* #### [**OPS | Deploy AI to any edge**](DeployAIToAnyEdge.md)
 
 * #### **OPS | Collect data for re-training** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
 
