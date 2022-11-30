@@ -148,7 +148,7 @@ Prerequisites
   <img width="600" src="image\48.png">
 </p>
 
-You will see the container is remotely launched to execute inference at your edge.
+* You will see the container is remotely launched to execute inference at your edge.
 
 <p align="center">
   <img width="600" src="image\25.png">
