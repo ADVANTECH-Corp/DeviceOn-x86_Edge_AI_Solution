@@ -91,14 +91,14 @@ Prerequisites
 * Select your registries and click on <i class="fa fa-refresh" aria-hidden="true"></i> icon to synchronize the docker image list to DeviceOn
 
 <p align="center">
-  <img width="600" src="image\39.png">
-</p>
-
-<p align="center">
   <img width="600" src="image\40.png">
 </p>
 
 * Next, the repository and image listing information is displayed on DeviceOn, and you can start deploying these images to edge devices.
+
+<p align="center">
+  <img width="600" src="image\39.png">
+</p>
 
 <p align="center">
   <img width="600" src="image\41.png">
@@ -129,15 +129,15 @@ Prerequisites
   - Select your image
   - Configure the container running parameters, such as port mapping, or specific command
 
-* Then, you could decide the container run automatically or manually start later. BTW, for batch deploy container, you may switch to "**Group Mode**" to select which device group need to run the container.
+* Then, you could decide the container run automatically or manually start later. BTW, for batch deploy container, you may switch to "**Group Mode**" to select which device group to run the container.
 
-* For automatically activating object detetion, the most important thing is to set a proper docker api in `Advanced Mode` of `Container Settings`. [Here](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/sample%20codes/autorun_cmd.txt) is a example for this practice.
+* To automatically create and run an AI inference container through DeviceOn server, the most important thing here is to set necessary commands/parameters in `Container Settings` of `Advanced Mode`. [Here](https://github.com/ADVANTECH-Corp/DeviceOn-x86_Edge_AI_Solution/blob/main/sample%20codes/autorun_cmd.txt) is an example of the container settings implemented in this repo.
 
 <p align="center">
   <img width="600" src="image\46.png">
 </p>
 
-> In the beginning, it is recommended that you deploy the container to a device to make sure everything, configuration works, and then batch provisioning.
+> In the beginning, it is recommended that you deploy the container to a device to make sure your configuration works, and then do batch provisioning.
 
 #### 4. Run your container at edge
 * If you do not enable "**Auto Start**" on add container step, the default image state will be **Created** not **Running**. Please select the container and click on <i class="fa solid fa-play"></i> icon to run the container.
@@ -150,7 +150,7 @@ Prerequisites
   <img width="600" src="image\48.png">
 </p>
 
-* You will see the container is remotely launched to execute inference at your edge.
+* In the end, you will see the container is remotely launched to execute inference at your edge.
 
 <p align="center">
   <img width="600" src="image\25.png">
