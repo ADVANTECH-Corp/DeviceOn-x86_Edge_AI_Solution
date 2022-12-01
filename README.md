@@ -31,7 +31,7 @@ In this repository, a real use case of factory assembly line AI is implemented f
 
 * #### [**DEV | Wrap an app around the model**](EncapsulateAPortableAIApplication.md)
 
-* #### **DEV |  Automate AI app wrapping** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
+* #### **DEV | Automate AI app wrapping** <sub>*(To be published soon, email wowaiot.wseg@advantech.com to get notified)*</sub>
 
 * #### [**OPS | Deploy the AI app to edge devices**](DeployAIToAnyEdge.md)
 
