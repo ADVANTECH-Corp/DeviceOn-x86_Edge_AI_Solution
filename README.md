@@ -20,7 +20,7 @@ A typical Machine Vision solution pipeline consists of data ingestion, data prep
 
 In this repository, a real use case of factory assembly line AI is implemented from the beginning to the end. It demonstrates how Advantech supports customers to construct a production-stage edge AI solution with comprehensive software and hardware solutions. The factory operation manger wants to develop and adopt a vision AI solution to improve management efficiency and minimize production downtime with the two following specific objectives.
 
--	Monitor if production is running continuously. 
+-	Check if there is a work-in-progress at any station. 
 -	Check if a station worker follows guidelines by wearing a cap and/or glove. 
 
 > ### **Step-by-step details are presented in the following sections**
