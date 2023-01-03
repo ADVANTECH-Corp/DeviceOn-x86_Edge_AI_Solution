@@ -24,7 +24,7 @@ Prerequisites
   <img width="600" src="image\31.png">
 </p>
 
-> The details of configurations in above picture are shown in the 3rd step.
+> The detailed configurations in the above picture are shown in the 3rd step.
 
 #### 2. Login your DeviceOn portal to get connection info
 
@@ -44,7 +44,7 @@ Prerequisites
   <img width="600" src="image\29.png">
 </p>
 
-> Please note that keep or save `Credential URL` and `IoT Key` for setting up WISE-Agnet.
+> Please note that keep or save `Credential URL` and `IoT Key` for setting up WISE-Agent.
 
 #### 3. Connect your device with WISE-Agent to the DeviceOn server
 * Turn on a terminal on your device.

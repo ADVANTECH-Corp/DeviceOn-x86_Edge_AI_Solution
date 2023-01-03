@@ -12,9 +12,7 @@ After a training process is done, click `Performance` tab at the top of current 
   <img width="600" src="image\13.png">
 </p>
 
->  Image source : https://blog.alantsai.net/posts/2018/08/bot-framework-with-ai-cognitive-service-31-export-custom-vision-trained-model-and-use-dockerfile-to-run-locally#WizKMOutline_1534085309606709
-
-After you click `Export`, a pop-up window shows up. Therein you can see many export types(/frameworks), such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose a target suitable for your application to be exported. In this repo, `Dockerfile` is selected as demonstration.
+After you click `Export`, a pop-up window shows up. Therein you can see many export types(/frameworks), such as ONNX, TensorFlow, Dockerfile, OpenVino, etc. Then you can choose a target suitable for your application to be exported. In this practice, `Dockerfile` is selected as demonstration.
 
 <p align="center">
   <img width="600" src="image\14.png">
@@ -40,15 +38,17 @@ Therein a `Dockerfile` will trigger required actions to pull/download the librar
 
 Before you start to execute docker operations, something you must know is how to prepare a docker runtime/environment.
 
+The environment of the following operation is in ubuntu 20.04.
+
 > To install and set up a docker runtime/environment, firstly you can download it [here](https://www.docker.com/products/docker-desktop).
 
 In this repo, there are two examples to create a docker image for AI inference and deployment later.
 
-* With a **Docker file** from Auzre Custom Vision, it actually runs a **TensorFlow model**. One of key reasons to adopt this export type is that it's very convenient and easy to furhter integrate with **Azure IoT Edge** and **Azure ML**.
+* One of crucial reasons to use this export type is that it's very convenient and easy to furhter integrate with Azure IoT Edge and Azure ML.
 
-* Moreover there is another complete example to execute inference with a model of Azure Dockerfile format. It allows you to feed in a video input, show inference results in real time, and output it as a video format.
+* Moreover there is another example, **creating a customization docker image**, to execute inference with an AI model in the `app` directory from [the downloaded file of Dockerfile option](/image/16.png). It allows you to feed in a video input, show inference results in real time, and output it as a video format.
 
-You can begin with one of them according to your need or interest.
+The following is 2 different applications, and you can begin with one of them according to your need or interest.
 
 ### 1. Dockerfile from Azure Custom Vision
 #### Build up a docker image
@@ -60,9 +60,14 @@ You can begin with one of them according to your need or interest.
   ```
     sudo docker build -t <your image name> .
   ```
+  > NOTICE: make sure that your image name must be lower case
 
 <p align="center">
   <img width="600" src="image\17.png">
+</p>
+
+<p align="center">
+  <img width="600" src="image\17-1.png">
 </p>
 
   3. After it finishes, enter the following instruction, and you can see the image you just have built.
@@ -83,7 +88,7 @@ You can begin with one of them according to your need or interest.
     sudo docker run -p 127.0.0.1:80:80 -d --rm <your image name>
   ```
 
-* To check if the docker container is running successfully, launch a web browser and then enter `localhost`, `127.0.0.1:80` or your virtual manchine ip. Finally, we would say it works normally for now if you can see a `CustomVision.ai model host harness` is there.
+* To check if the docker container is running successfully, launch a web browser and then enter `localhost`, `127.0.0.1:80`. Finally, we would say it works normally for now if you can see a `CustomVision.ai model host harness` is there.
 
 <p align="center">
   <img width="600" src="image\20.png">
@@ -92,7 +97,7 @@ You can begin with one of them according to your need or interest.
 * You also can use a image file in your device to do a simple test with the following instruction.
 
   ```
-    curl -X POST http://127.0.0.1/image -F imageData=@</.../image_name.jpg, ex:/home/advantech/test_image.jpg>
+    curl -X POST http://127.0.0.1/image -F imageData=@<your image path>
   ```
 
 * You can see inference result printed in the terminal window.
@@ -101,11 +106,11 @@ You can begin with one of them according to your need or interest.
   <img width="600" src="image\19.png">
 </p>
 
-#### (Optional) Encapsulate a customization docker image from the running container
+#### (Additional) Encapsulate a customization docker image from the running container
 
 If you need to customize a docker image, the following commands will be also necessary for you after you put other necessary components or functionalities into the original container.  
 
-> _REMARK_: Keep the container running while executing the command.
+> REMARK: Keep the container running while executing the command.
 
 * Open a new terminal and check the running container ID, and then enter the following command
 
@@ -115,13 +120,15 @@ $ sudo docker commit <container ID> <your image name>
 
 ( For example: `sudo docker commit 3380f16f9163 advantech_factoryai:v0` )
 
+> Enter `sudo docker ps -l`, and then you can check the container ID
+
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
   <img width="600" src="image\26.png">
 </p>
 
-Finally, you can have a new docker image.
+Finally, you have created a new docker image.
 
 ### 2. Docker image from Docker Hub
 #### Pull a base image
@@ -130,6 +137,8 @@ Finally, you can have a new docker image.
 ```
 $ sudo docker pull datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815
 ```
+> There may be other version, and you can find it in this [web page](https://hub.docker.com/r/datamachines/cudnn_tensorflow_opencv) in dockerhub.
+
 <p align="center">
   <img width="600" src="image\21.png">
 </p>
@@ -143,18 +152,19 @@ $ sudo docker image ls
   <img width="600" src="image\22.png">
 </p>
 
+#### Prepare required files for creating a customization docker image
+* Download required files from [here](/advan) to your local directory, and make sure that you have put all the necessary contents or components into the directory.
+
 #### Create and run a container with the base image
-* Firstly, we start a container to be a base for creating a customization docker image later. 
-* In order to automatically launch your own application in the container, you have to copy required files from your local host directory such as `/home/advan/Downloads/azure_docker/app` to a folder of the container that you created. In this repo, I created a folder named `advan` in my container, and there are `a model file from Azure Custom Vision`, [.py files](sample%20codes/python/), and [a video file](video/) as inference input in it.
-* Enter the following command
+* Enter the following command, and `your local directory` is the directory where you saved the required files.
+
 ```
-$ sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v <your local directory>:/dmc -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
+$ sudo docker run -v <your local directory>:/advan -it --rm datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815 bash 
 ```
 
 #### Encapsulate a customization docker image from the running container
-Make sure you have put all the necessary contents or components into the running container and then just enter the following command.
 
-> _REMARK_: Keep the container running while executing the command.
+> REMARK: Keep the container running.
 
 * Open a new terminal and check the running container ID, and then enter the following command
 
@@ -164,22 +174,22 @@ $ sudo docker commit <container ID> <your image name>
 
 ( For example: `sudo docker commit dc0a9c7dbfcb advantech_edge_ai:v1` )
 
+> Enter `sudo docker ps -l`, and then you can check the container ID
+
 * After the committing process is completed, type `$ sudo docker image ls` to check if it is successful.
 
 <p align="center">
   <img width="600" src="image\23.png">
 </p>
 
-Once a new customization docker image is created successfully, you can delete the base image  `datamachines/cudnn_tensorflow_opencv:11.6.2_2.9.1_4.6.0-20220815` for saving your storage.
-
 #### Create and run a docker container for the customization image validation
 * We prepared a shell script as show below, `run_detection.sh`, to run a docker container with the customization image of `advantech_edge_ai:v1`, and also to execute `app_video.py` to show up visualized recognition results.
 
 <run_detection.sh>：
 ```
-#! bash/bash
+#!/bash/bash
 
-sudo docker run --gpus all -e DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix -v -dt advantech_edge_ai:v1 python ../advan/app_video.py 
+sudo docker run --gpus all -e DISPLAY=:0.0 -e QT_X11_NO_MITSHM=1 --net=host -v /tmp/.X11-unix:/tmp/.X11-unix -dt <your image name> python app_video.py
 ```
 
 <p align="center">
@@ -238,7 +248,7 @@ $ sudo docker login <your registry URL>
 > Use docker tag to create an alias of the image with the fully qualified path, which means an alias name must include registry url, just like our example.
 
 ```
-$ sudo docker push <registry URL/container image filename>
+$ sudo docker push <registry URL>
 ```
 
 <p align="center">

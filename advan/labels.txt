@@ -1,0 +1,8 @@
+Foam
+hand_1
+hand_2
+hand_3
+hat
+People
+tool_1
+tool_2

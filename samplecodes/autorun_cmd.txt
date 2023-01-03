@@ -1,0 +1,23 @@
+{
+  "Env": [
+    "DISPLAY=:0.0",
+    "QT_X11_NO_MITSHM=1",
+    "NVIDIA_VISIBLE_DEVICES=all",
+    "NVIDIA_DRIVER_CAPABILITIES=compute",
+    "NVIDIA_DRIVER_CAPABILITIES=utility"
+  ],
+  "Volumes":{
+    "/tmp/.X11-unix":{},
+    "<your local directory>":{}
+  }
+  "HostConfig": {
+    "Binds":[
+      "/tmp/.X11-unix/:/tmp/.X11-unix",
+      "<your local directory>:/advan/result"
+    ],    
+    "Runtime":"nvidia",
+    "NetworkMode": "host"
+  },
+  "NetworkingConfig":{
+  }
+}
